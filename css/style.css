@@ -1,3 +1,15 @@
+body,html{
+  height: 100%;
+  margin:0;
+}
+main{
+  height: 100%;
+  background-image: url("https://image.ibb.co/nA9pQA/mess-order-photo-png.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 nav{
   background-color: #000000;
   position:fixed;
