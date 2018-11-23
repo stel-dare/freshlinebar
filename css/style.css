@@ -2,16 +2,8 @@ body,html{
   height: 100%;
   margin:0;
 }
-main{
-  height: 100%;
-  background-image: url("https://image.ibb.co/nA9pQA/mess-order-photo-png.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 nav{
-  background-color: #000000;
+  background-color: #16222A;
   position:fixed;
   top:0;
   left:0;
@@ -19,16 +11,26 @@ nav{
   display:flex;
   justify-content: space-between;
   align-items: center;
-  font-size:200%;
+  font-size:160%;
 }
-
-#nav-text{
-  font-family: 'Spicy Rice', cursive;
-  padding: 1%;
-  color:#999999;
-}
-
 #menu-bar{
-  padding: 1%;
+  padding: 1.2%;
   color:#999999;
+}
+
+.logo{
+  width:20%;
+}
+.logo img{
+  max-width:100%;
+  margin: 0 auto;
+}
+
+main{
+  height: 100%;
+  /*background-image: url("https://image.ibb.co/nA9pQA/mess-order-photo-png.png");*/
+  background: #136a8a;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #267871, #136a8a);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #267871, #136a8a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
