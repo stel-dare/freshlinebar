@@ -1,7 +1,17 @@
+
 body,html{
   height: 100%;
   margin:0;
+  font-family: 'Merriweather', serif;
 }
+
+body{
+  padding-top: 40px;
+  background: #136a8a;*/  /* fallback for old browsers
+  background: -webkit-linear-gradient(to right, #267871, #136a8a);  /* Chrome 10-25, Safari 5.1-6*/
+  background: linear-gradient(to right, #267871, #136a8a);
+}
+
 nav{
   background-color: #16222A;
   position:fixed;
@@ -13,24 +23,210 @@ nav{
   align-items: center;
   font-size:160%;
 }
+
 #menu-bar{
   padding: 1.2%;
   color:#999999;
 }
 
-.logo{
+.logo-container{
   width:20%;
 }
-.logo img{
+.logo-container img{
   max-width:100%;
   margin: 0 auto;
 }
 
-main{
-  height: 100%;
-  /*background-image: url("https://image.ibb.co/nA9pQA/mess-order-photo-png.png");*/
-  background: #136a8a;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #267871, #136a8a);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #267871, #136a8a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+.meal-container{
+  background-color:white;
+  width:90%;
+  margin:0 auto;
+  margin-top:1.3em;
+  padding:0.5em;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.meal-img{
+  width:40%;
+}
+
+.meal-img img{
+  max-width:100%;
+}
+
+.meal-description{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+ justify-content: space-between;
+  width:50%;
+}
+
+#meal-parent-container{
+
+  display:flex;
+  flex-direction: column;
+  padding-top: 5%;
+}
+
+.time, .special-offers{
+  background-color:white;
+  width:90%;
+  margin:0 auto;
+  margin-top:1.3em;
+  padding:0.5em;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  text-align: center;
+}
+
+.special-offers{
+  margin-bottom: 1.3em;
+}
+
+button{
+  padding: 0.8em;
+  color: white;
+  background: #16222A;
+  border: 0px;
+}
+
+
+@media screen and (min-width:410px) {
+
+  .time{
+      margin-top:1.5em;
+  }
+
+  .meal-description{
+    padding:0.7em;
+  }
+
+  .logo-container{
+    width:18%;
+  }
+
+}
+@media screen and (min-width:430px) {
+
+  .time{
+      margin-top:1.8em;
+  }
+
+  .meal-description{
+    padding:1em;
+  }
+
+  .logo-container{
+    width:16%;
+  }
+
+}
+
+@media screen and (min-width:500px) {
+
+  .time{
+      margin-top:2.3em;
+      width:70%;
+  }
+  .meal-container{
+    width:80%;
+}
+.meal-img{
+  max-width: 37%;
+}
+  .meal-description{
+    padding:1.2em;
+  }
+
+  .special-offers{
+    width: 80%;
+
+  }
+
+  .logo-container{
+    width:16%;
+  }
+
+}
+
+@media screen and (min-width:600px) {
+#meal-parent-container{
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.meal-container{
+  width:45%;
+}
+
+
+.time{
+    margin-top:2.6em;
+}
+
+.logo-container{
+  width:12%;
+}
+
+}
+
+@media screen and (min-width:800px) {
+
+
+.time{
+    margin-top:2.9em;
+}
+
+.logo-container{
+  width:10%;
+}
+
+}
+
+@media screen and (min-width:900px) {
+
+
+  .time{
+      width:60%;
+  }
+
+  .special-offers{
+    width: 70%;
+
+  }
+
+.logo-container{
+  width:8%;
+}
+
+}
+
+@media screen and (min-width:1000px) {
+
+
+  .time{
+      width:50%;
+  }
+
+  .special-offers{
+    width: 60%;
+
+  }
+
+.logo-container{
+  width:6%;
+}
+
+}
+
+@media screen and (min-height:850px) {
+
+  .special-offers{
+    background-color:red;
+
+  }
+
+
 
 }
