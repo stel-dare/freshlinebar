@@ -27,6 +27,7 @@ nav{
 #menu-bar{
   padding: 1.2%;
   color:#999999;
+  cursor: pointer;
 }
 
 .logo-container{
@@ -91,6 +92,7 @@ button{
   color: white;
   background: #16222A;
   border: 0px;
+  cursor: pointer;
 }
 
 footer{
