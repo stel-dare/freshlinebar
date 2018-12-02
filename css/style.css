@@ -69,6 +69,7 @@ nav{
   display:flex;
   flex-direction: column;
   padding-top: 5%;
+
 }
 
 .time, .special-offers{
@@ -92,6 +93,14 @@ button{
   border: 0px;
 }
 
+footer{
+
+  background: #16222A;
+  padding:1em;
+  text-align: center;
+  color: white;
+  font-size: 120%;
+}
 
 @media screen and (min-width:410px) {
 
@@ -217,16 +226,5 @@ button{
 .logo-container{
   width:6%;
 }
-
-}
-
-@media screen and (min-height:850px) {
-
-  .special-offers{
-    background-color:red;
-
-  }
-
-
 
 }
