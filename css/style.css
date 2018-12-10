@@ -167,7 +167,43 @@ footer{
 }
 
 /***Modal Styling End***/
+/**SIde NAv bar start**/
+.sidenav {
+    height: 100%;
+    width:0;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    right: 0;
+    background-color: #16222A;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
 
+.sidenav a {
+    padding: 2% 2% 2% 10%;
+    text-decoration: none;
+    font-size: 1.8em;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+ #sideclosebtn {
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 9%;
+    font-size: 3em;
+  /*  margin-left: 50px;*/
+}
+/**Side Nav bar end**/
 
 @media screen and (min-width:410px) {
 
