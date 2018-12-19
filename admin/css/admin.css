@@ -118,6 +118,20 @@ hr{
 #tab-link{
   text-decoration: none;
 }
+
+.controls{
+  margin:5% 0 0 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.controls button, select{
+  background-color: #16222A;
+  color: white;
+  border: none;
+  padding: 8px 10px 8px 10px;
+  cursor:pointer;
+}
 @media screen and (min-width:410px) {
 
   .logo-container{
@@ -152,6 +166,11 @@ hr{
 .dash{
   width:60%;
 }
+
+.controls{
+  width:45%;
+  margin:5% 0 0 50%;
+}
 }
 
 @media screen and (min-width:800px) {
@@ -171,7 +190,10 @@ hr{
 .logo-container{
   width:8%;
 }
-
+.controls{
+  width:36%;
+  margin:3% 0 0 60%;
+}
 }
 
 @media screen and (min-width:1000px) {
@@ -188,6 +210,11 @@ hr{
 
 .dash{
   width: 29%;
+}
+
+.controls{
+  width:30%;
+  margin:3% 0 0 68%;
 }
 
 }
