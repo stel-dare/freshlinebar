@@ -125,12 +125,62 @@ hr{
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.controls button, select{
+.controls button, .controls select{
   background-color: #16222A;
   color: white;
   border: none;
   padding: 8px 10px 8px 10px;
   cursor:pointer;
+}
+/*********************************COntrols and Others****************************/
+#addControl{
+  width: 85%;
+  margin:10% 0 0 10%;
+}
+#addControl button ,#addControl select{
+  border: none;
+  padding:3% 5% 3% 5%;
+  color: white;
+  cursor: pointer;
+}
+
+ #price{
+   width: 20%;
+ }
+
+ #addButton{
+   margin:0% 20% 0% 0%;
+   background-color: #16222A;
+ }
+
+select{
+  background:#16222A;
+}
+
+ #cancelButton{
+   background: #B7950B;
+ }
+
+ #uploadImage{
+   margin: 0% 0% 5% 0%;
+ }
+/*************************************************************************/
+.hide{
+  display:none;
+}
+.foodItems{
+  width: 85%;
+  margin: 5% 0% 5% 5%;
+}
+.menuDiv{
+  display: flex;
+  justify-content: space-between;
+}
+.menuDiv div{
+  width: 50%;
+}
+.menuDiv div img{
+  max-width: 90%;
 }
 @media screen and (min-width:410px) {
 
