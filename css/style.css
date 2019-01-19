@@ -152,6 +152,7 @@ footer{
   width:25%;
   margin-left: 3.5%;
   margin-top: 2%;
+  margin-bottom: 5%;
 }
 .qty-div input{
   width: 100%;
@@ -164,6 +165,11 @@ footer{
 
 .modal-buttons button:last-child{
   background: #B7950B;
+}
+
+.premises label{
+  display: inline-block;
+  margin: 3% 0% 3% 0%;
 }
 
 /***Modal Styling End***/

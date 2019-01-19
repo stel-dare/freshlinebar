@@ -39,16 +39,16 @@
       <option value='Saturday'>Saturday</option>
       <option value='Sunday'>Sunday</option>
     </select>
-    <button id='toggleForm' onclick="toggleForm()">Add</button>
+    <button id='toggleForm'>Add</button>
   </div>
   <div class='foodItems'></div>
-  <div id='addControl' class="hide">
-      <label for='name'>Name of Food</label><br>
-      <br>
+  <form id='addControl' class="hide">
+      <label for='name'>Name of Food<br>
+        <br>
         <input type='text' placeholder="Name of Food" id='name'><br>
-        <br>
-        <label for='day'>Day Available</label><br>
-        <br>
+    </label>
+        <label for='day'>Day Available<br>
+          <br>
         <select id='day'>
           <option value='Day Availabe'>Day Available</option>
           <option value='Monday'>Monday</option>
@@ -59,18 +59,19 @@
           <option value='Saturday'>Saturday</option>
           <option value='Sunday'>Sunday</option>
         </select><br>
-        <br>
-        <label for='price'>Cost Of Food</label><br>
-        <br>
+        </label>
+        <label for='price'>Cost Of Food<br>
+          <br>
           <input type='number' min='10' max='100' id='price'><br>
-          <br>
-          <label for="uploadImage">Upload Food Image</label><br>
-          <br>
-           <input type="file" id='uploadImage' accept="image/*" value="Upload Image"/>
-          <br>
+          </label>
+          <label for="uploadImage">Upload Food Image<br>
+            <br>
+           <input type="file" id='uploadImage' accept="image/*" value="Upload Image"/><br>
+          </label>
           <button id='addButton'>Add</button>
           <button id='cancelButton'>Cancel</button>
-  </div>
+          <button id='doneButton'>Done</button>
+  </form>
 <!--  /********************************Scripts******************************/ -->
 <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
 <script>

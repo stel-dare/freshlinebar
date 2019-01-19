@@ -20,6 +20,7 @@ sideClose.addEventListener('click',closeSideBar);
 /*******************************Side bar Nav End*************************************/
 
 /*******Menu Page Script**************/
+/****************************REFRESH********************************/
 let getMenu = () => {
   let menuData;
   let fragment = document.createDocumentFragment();
@@ -39,17 +40,21 @@ let getMenu = () => {
 
 //let menuDiv = document.createElement("div");
 //menuDiv.classList.add("menuDiv");
-
-
-
-
-
 }
 window.addEventListener('load',getMenu);
+/****************************REFRESH END********************************/
 
-let toggleForm = () => document.getElementById('addControl').classList.toggle('hide');
+/************Main Add, Cancel Done ***************************/
+let toggleForm = (e) => {
+e.preventDefault();
+document.getElementById('addControl').classList.toggle('hide');
+}
+document.getElementById('toggleForm').addEventListener('click', toggleForm);
+document.getElementById('cancelButton').addEventListener('click', toggleForm);
+document.getElementById('doneButton').addEventListener('click', toggleForm);
+/************Main Add, Cancel Done End ***************************/
 
-
+/*************************Upload of Image and food details **********************************/
 let foodImage;
 
 let handleFileUploadChange = (e) => {
@@ -57,19 +62,16 @@ let handleFileUploadChange = (e) => {
 }
 
 let handleFileUploadSubmit = (e) => {
-
+  e.preventDefault();
   const uploadTask = storageRef.child(`images/${foodImage.name}`).put(foodImage); //create a child directory called images, and place the file inside this directory
 
   uploadTask.on('state_changed', (snapshot) => {
   // Observe state change events such as progress, pause, and resume
   }, (error) => {
     // Handle unsuccessful uploads
+    alert('Image Could Not Be Uploaded.\nPlease try again');
     console.log(error);
   }, () => {
-     // Do something once upload is complete
-     //let imageUrl;
-     document.getElementById('addControl').classList.toggle('hide');
-    // alert('SUCCESS');
      storageRef.child(`images/${foodImage.name}`).getDownloadURL().then((url) => {
        database.ref('Menu').push({
          Name: document.getElementById('name').value,
@@ -77,12 +79,13 @@ let handleFileUploadSubmit = (e) => {
          Cost:document.getElementById('price').value,
          ImageUrl:url
        });
+       document.getElementById('addControl').reset();
      });
-
+      alert('SUCCESS');
      console.log('success');
   });
 }
 
 document.getElementById('uploadImage').addEventListener('change', handleFileUploadChange);
-
 document.getElementById('addButton').addEventListener('click', handleFileUploadSubmit);
+/*************************Upload of Image and food details  End**********************************/
