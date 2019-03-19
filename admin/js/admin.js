@@ -21,37 +21,32 @@ sideClose.addEventListener('click',closeSideBar);
 
 /*******Menu Page Script**************/
 /****************************REFRESH********************************/
-let getMenu = () => {
-  let menuData;
-  let fragment = document.createDocumentFragment();
-  database.ref('Menu').once('value').then(function(snapshot) {
-  //var username = (snapshot.val() && snapshot.val().username) || 'Anonymous';
-  let menuData = snapshot.val();
-  console.log(snapshot.val());
-  for (let key in menuData){
-    let foodItem = document.createElement("div");
-    foodItem.classList.add("menuDiv");
-    foodItem.innerHTML = '<div class="foodImg"><img src="' + menuData[key].ImageUrl+'"></div><span>' + menuData[key].Name + '</span>'  ;
-    fragment.appendChild(foodItem);
-  }
-  document.querySelector('.foodItems').appendChild(fragment);
-  //console.log();
-});
-
-//let menuDiv = document.createElement("div");
-//menuDiv.classList.add("menuDiv");
-}
-window.addEventListener('load',getMenu);
+let refresh = () => location.reload();
 /****************************REFRESH END********************************/
 
 /************Main Add, Cancel Done ***************************/
 let toggleForm = (e) => {
 e.preventDefault();
 document.getElementById('addControl').classList.toggle('hide');
+window.scrollBy(0, document.body.scrollHeight);
+}
+//Toggle and Refresh
+let toggleAndRefresh = (e) => {
+e.preventDefault();
+document.getElementById('addControl').classList.toggle('hide');
+location.reload();
+}
+//Toggle edit form
+let toggleEditForm = (e) => {
+e.preventDefault();
+document.getElementById('editFood').classList.toggle('hide');
+window.scrollBy(0, document.body.scrollHeight);
 }
 document.getElementById('toggleForm').addEventListener('click', toggleForm);
 document.getElementById('cancelButton').addEventListener('click', toggleForm);
-document.getElementById('doneButton').addEventListener('click', toggleForm);
+//EditcancelButton toggles edit form
+document.getElementById('EditcancelButton').addEventListener('click', toggleEditForm);
+document.getElementById('doneButton').addEventListener('click', toggleAndRefresh);
 /************Main Add, Cancel Done End ***************************/
 
 /*************************Upload of Image and food details **********************************/
@@ -59,6 +54,7 @@ let foodImage;
 
 let handleFileUploadChange = (e) => {
   foodImage = e.target.files[0];
+  document.getElementById('Image-of-selected-food').src = URL.createObjectURL(e.target.files[0]);
 }
 
 let handleFileUploadSubmit = (e) => {
@@ -77,11 +73,13 @@ let handleFileUploadSubmit = (e) => {
          Name: document.getElementById('name').value,
          Day: document.getElementById('day').value,
          Cost:document.getElementById('price').value,
-         ImageUrl:url
+         ImageUrl:url,
+         ImageName:foodImage.name,
+         Category:document.getElementById('category').value
        });
        document.getElementById('addControl').reset();
      });
-      alert('SUCCESS');
+      alert('Food was successfulyy added to menu.');
      console.log('success');
   });
 }

@@ -133,25 +133,25 @@ hr{
   cursor:pointer;
 }
 /*********************************COntrols and Others****************************/
-#addControl{
+#addControl, #editFood{
   width: 85%;
   margin:10% 0 0 10%;
 }
-#addControl button ,#addControl select{
+#addControl button , #editFood button, #addControl select, #editFood select, .foodDetails button{
   border: none;
   padding:3% 5% 3% 5%;
   color: white;
   cursor: pointer;
 }
-#addControl label{
+#addControl label, #editFood label{
   display: block;
   margin: 5% 0% 1.5% 0%;
 }
- #price{
+ #price, #Editprice{
    width: 20%;
  }
 
- #addButton{
+ #addButton, #EditsaveButton{
    margin:0% 20% 0% 0%;
    background-color: #16222A;
  }
@@ -160,7 +160,7 @@ select{
   background:#16222A;
 }
 
- #cancelButton{
+ #cancelButton, #EditcancelButton{
    background: #B7950B;
  }
 
@@ -170,28 +170,64 @@ select{
   margin: 5% 0% 5% 0%;
   background:   #033b19 ;
 }
+.edit{
+background: #1a162a;
+}
+.delete{
+background: #162a1e;
+}
 
  #uploadImage{
    margin: 0% 0% 5% 0%;
+ }
+
+ #editImageCont img{
+   max-width: 35%;
+
+ }
+ #newImageUpload, #uploadImage{
+   display: none;
+ }
+ #ImageOnlyCont{
+   display: inline-block;
+   width: 60%;
+ }
+ #ImageOnlyCont img{
+   max-width: 90%;
+ }
+ #TextOnlyCont{
+   display: inline-block;
+   width: 35%;
+   color: blue;
+   font-style: italic;
  }
 /*************************************************************************/
 .hide{
   display:none;
 }
 .foodItems{
-  width: 85%;
+  width: 90%;
   margin: 5% 0% 5% 5%;
 }
 .menuDiv{
   display: flex;
   justify-content: space-between;
+  margin: 5% 0% 5% 0%;
 }
 .menuDiv div{
-  width: 50%;
+  width: 48%;
 }
 .menuDiv div img{
   max-width: 90%;
 }
+/*************I'm here**************/
+.foodDetails{
+  display: flex;
+  flex-direction:column;
+  align-items:stretch;
+  justify-content: space-around;
+}
+/******************************************************************************/
 @media screen and (min-width:410px) {
 
   .logo-container{

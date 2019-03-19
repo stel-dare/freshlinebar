@@ -28,8 +28,8 @@
   </nav>
   <!--Top Nav Bar End-->
   <div class='controls'>
-    <button>Refresh</button>
-    <select>
+    <button id='refresh' onclick="refresh()">Refresh</button>
+    <select id='sortDay' onchange="sortByDays()">
       <option value='Day of Week'>Day of Week</option>
       <option value='Monday'>Monday</option>
       <option value='Tuesday'>Tuesday</option>
@@ -47,10 +47,18 @@
         <br>
         <input type='text' placeholder="Name of Food" id='name'><br>
     </label>
+    <label for='category'>Category<br>
+      <br>
+    <select id='category'>
+      <option value='Main Course'>Main Course</option>
+      <option value='Snack'>Snack</option>
+      <option value='Specials'>Specials</option>
+    </select><br>
+    </label>
         <label for='day'>Day Available<br>
           <br>
         <select id='day'>
-          <option value='Day Availabe'>Day Available</option>
+          <option value='Day Available'>Day Available</option>
           <option value='Monday'>Monday</option>
           <option value='Tuesday'>Tuesday</option>
           <option value='Wednesday'>Wednesday</option>
@@ -64,13 +72,61 @@
           <br>
           <input type='number' min='10' max='100' id='price'><br>
           </label>
-          <label for="uploadImage">Upload Food Image<br>
+          <!--
+          <label for="uploadImage"><span id='uploadText'>Upload Food Image</span><br>
             <br>
            <input type="file" id='uploadImage' accept="image/*" value="Upload Image"/><br>
           </label>
+        -->
+        <input type="file" id='uploadImage' accept="image/*" value="Upload Image"/>
+        <div id='ImageAndTextCont'>
+          <div id='ImageOnlyCont'>
+      <img src='' alt='image of food' id='Image-of-selected-food'>
+         </div>
+<p id='TextOnlyCont' onclick="document.getElementById('uploadImage').click();">Upload Image</p>
+      </div>
           <button id='addButton'>Add</button>
           <button id='cancelButton'>Cancel</button>
           <button id='doneButton'>Done</button>
+  </form>
+  <form id='editFood' class="hide">
+      <label for='Editname'>Name of Food<br>
+        <br>
+        <input type='text' placeholder="Name of Food" id='Editname'><br>
+    </label>
+    <label for='Editcategory'>Category<br>
+      <br>
+    <select id='Editcategory'>
+      <option value='Main Course'>Main Course</option>
+      <option value='Snack'>Snack</option>
+      <option value='Specials'>Specials</option>
+    </select><br>
+    </label>
+        <label for='Editday'>Day Available<br>
+          <br>
+        <select id='Editday'>
+          <option value='Day Available'>Day Available</option>
+          <option value='Monday'>Monday</option>
+          <option value='Tuesday'>Tuesday</option>
+          <option value='Wednesday'>Wednesday</option>
+          <option value='Thursday'>Thursday</option>
+          <option value='Friday'>Friday</option>
+          <option value='Saturday'>Saturday</option>
+          <option value='Sunday'>Sunday</option>
+        </select><br>
+        </label>
+        <label for='Editprice'>Cost Of Food<br>
+          <br>
+          <input type='number' min='10' max='100' id='Editprice'><br>
+          </label>
+           <input type="file" id='newImageUpload' accept="image/*" value="Upload Image"/>
+
+
+        <div id='editImageCont'>
+        <img src='' alt='image of selected food' id='editImage' onclick="document.getElementById('newImageUpload').click();">
+      </div>
+          <button id='EditsaveButton'>Save</button>
+          <button id='EditcancelButton'>Cancel</button>
   </form>
 <!--  /********************************Scripts******************************/ -->
 <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
@@ -86,6 +142,7 @@
   };
   firebase.initializeApp(config);
 </script>
+<script src="js/menu.js"></script>
   <script src="js/admin.js"></script>
 </body>
 </html>
