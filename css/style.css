@@ -209,6 +209,12 @@ footer{
     font-size: 3em;
   /*  margin-left: 50px;*/
 }
+
+.quote{
+  margin: 2% 2% 2% 2%;
+  color: white;
+  font-style: italic;
+}
 /**Side Nav bar end**/
 
 @media screen and (min-width:410px) {

@@ -26,12 +26,12 @@
   </nav>
 
 <div class='time'>
-<p>Monday 26 November 2018</p>
+<p id='getTime'>Monday 26 November 2018</p>
 <p>TODAY'S OFFERS</p>
 </div>
 
 <div id='meal-parent-container'>
-
+<!--
 <div class='meal-container'>
   <div class='meal-img'>
   <img src='jollof.jpg' alt='picture of jollof rice'>
@@ -44,62 +44,20 @@
 </div>
 </div>
 
-<div class='meal-container'>
-  <div class='meal-img'>
-  <img src='gobe.jpeg' alt='picture of jollof rice'>
-</div>
-<div class=meal-description>
-  <span>Fried Plantain with Beans</span>
-  <button>
-  <span class='order'>Order Now</span>
-</button>
-</div>
-</div>
-
-
-<div class='meal-container'>
-  <div class='meal-img'>
-  <img src='plain-rice.jpg' alt='picture of jollof rice'>
-</div>
-<div class=meal-description>
-  <span>Plain Rice with Chicken</span>
-  <button>
-  <span class='order'>Order Now</span>
-</button>
-</div>
-</div>
-
-<div class='meal-container'>
-  <div class='meal-img'>
-  <img src='banku-and-Tilapia.jpg' alt='picture of jollof rice'>
-</div>
-<div class=meal-description>
-  <span>Banku With Tilapia</span>
-  <button>
-  <span class='order'>Order Now</span>
-</button>
-</div>
-</div>
-
-
-<div class='meal-container'>
-  <div class='meal-img'>
-  <img src='Fufu-and-fish.jpg' alt='picture of jollof rice'>
-</div>
-<div class=meal-description>
-  <span>Fufu with Light Soup</span>
-  <button>
-  <span class='order'>Order Now</span>
-</button>
-</div>
-</div>
-
+-->
 </div>
 <div class='special-offers'>
   <p>Snack Bar</p>
 </div>
+<div id='snacks'>
+</div>
 <div class='special-offers'>
   <p>Special Offers</p>
+</div>
+<div id='specialOffers'>
+</div>
+<div class='quote'>
+<p>Food is life</p>
 </div>
 <footer>
 Made with love &copy; 2018
@@ -112,7 +70,7 @@ Made with love &copy; 2018
     <span class="close">&times;</span>
     <form id='order-form'>
     <p>Some text in the Modal..</p>
-    <div class='cost-div'>Cost: GHS <span class='cost-value'>10</span></div>
+    <div class='cost-div'>Cost: GHS <span class='cost-value' id='costValue'>10</span></div>
     <div class='qty-div'><input type='number' value='1' min='1' max='50'></div>
     <div class='premises'>
       <label>
@@ -128,6 +86,19 @@ Made with love &copy; 2018
 
 </div>
 <!--Modal End -->
+<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDycj71Tqn9huLHVXpcOG-GY-4P2-qqewo",
+    authDomain: "mess-order.firebaseapp.com",
+    databaseURL: "https://mess-order.firebaseio.com",
+    projectId: "mess-order",
+    storageBucket: "mess-order.appspot.com",
+    messagingSenderId: "312900290065"
+  };
+  firebase.initializeApp(config);
+</script>
 <script src="js/script.js"></script>
   </body>
 </html>
