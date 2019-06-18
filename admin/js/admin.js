@@ -53,12 +53,45 @@ document.getElementById('doneButton').addEventListener('click', toggleAndRefresh
 let foodImage;
 
 let handleFileUploadChange = (e) => {
-  foodImage = e.target.files[0];
+  //foodImage = e.target.files[0];
   document.getElementById('Image-of-selected-food').src = URL.createObjectURL(e.target.files[0]);
+  document.getElementById('Image-of-selected-food').onload=()=>{
+    if(document.getElementById('Image-of-selected-food').naturalHeight >=document.getElementById('Image-of-selected-food').naturalWidth ){
+       alert('Image too large. \nPlease select a different image');
+       document.getElementById('Image-of-selected-food').src='';
+     }
+    else foodImage = e.target.files[0];
+  }
+  console.log(foodImage);
 }
+/*
+let validateForm = (e) => {
+  e.preventDefault();
+  if(!foodImage) alert('Please upload an image');
+  else if (document.getElementById('name').value ==='') alert('Please input the name of the food');
+  else if (document.getElementById('day').value ==='Day Available') alert('Please select a day');
+  else if (document.getElementById('price').value<=0) alert('Please input the price of the food');
+}
+*/
 
 let handleFileUploadSubmit = (e) => {
   e.preventDefault();
+  if(!foodImage)
+  { alert('Please upload an image');
+    return false;
+}
+  else if (document.getElementById('name').value ==='')
+   {alert('Please input the name of the food');
+    return false;
+  }
+  else if (document.getElementById('day').value ==='Day Available'){
+    alert('Please select a day');
+    return false;
+  }
+  else if (document.getElementById('price').value<=0) {
+    alert('Please input the price of the food');
+    return false;}
+    else{
   const uploadTask = storageRef.child(`images/${foodImage.name}`).put(foodImage); //create a child directory called images, and place the file inside this directory
 
   uploadTask.on('state_changed', (snapshot) => {
@@ -78,12 +111,17 @@ let handleFileUploadSubmit = (e) => {
          Category:document.getElementById('category').value
        });
        document.getElementById('addControl').reset();
+       document.getElementById('Image-of-selected-food').src=''
      });
       alert('Food was successfulyy added to menu.');
      console.log('success');
   });
+
+}
 }
 
+
 document.getElementById('uploadImage').addEventListener('change', handleFileUploadChange);
+//document.getElementById('addButton').addEventListener('click', handleFileUploadSubmit);
 document.getElementById('addButton').addEventListener('click', handleFileUploadSubmit);
 /*************************Upload of Image and food details  End**********************************/

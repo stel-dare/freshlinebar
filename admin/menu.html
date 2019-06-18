@@ -41,7 +41,9 @@
     </select>
     <button id='toggleForm'>Add</button>
   </div>
-  <div class='foodItems'></div>
+  <div class='foodItems'><p class='catLabel'>MAIN COURSE</p></div>
+  <div class='snacks'><p class='catLabel'>SNACKS</p></div>
+  <div class='specials'><p class='catLabel'>SPECIALS</p></div>
   <form id='addControl' class="hide">
       <label for='name'>Name of Food<br>
         <br>
@@ -70,7 +72,7 @@
         </label>
         <label for='price'>Cost Of Food<br>
           <br>
-          <input type='number' min='10' max='100' id='price'><br>
+          <input type='number' min='1' max='100' id='price' value='0'><br>
           </label>
           <!--
           <label for="uploadImage"><span id='uploadText'>Upload Food Image</span><br>
