@@ -1,0 +1,24 @@
+body,html{
+    margin:0;
+}
+
+section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/diner-i.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    margin-top: 8em;
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+}

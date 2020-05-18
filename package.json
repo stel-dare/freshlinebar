@@ -1,0 +1,23 @@
+{
+  "name": "freshlinebar",
+  "version": "1.0.0",
+  "description": "A restaurant order management system",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stel-dare/freshlinebar.git"
+  },
+  "author": "Stella Dare",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stel-dare/freshlinebar/issues"
+  },
+  "homepage": "https://github.com/stel-dare/freshlinebar#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
