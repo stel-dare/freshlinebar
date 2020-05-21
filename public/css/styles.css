@@ -1,24 +1,149 @@
 body,html{
     margin:0;
+    line-height: 1.8;
+    font-weight: 300;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
 }
 
-section{
+a{
+    text-decoration: none;
+}
+
+nav{
+    background:#0f1404;
     position: fixed;
     top: 0;
     left: 0;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    background: url(../images/diner-i.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+    right: 0;
+    z-index: 100;
 }
 
-h1{
-    text-align: center;
-    margin-top: 8em;
-    font-family: 'Press Start 2P', cursive;
-    color: #fff;
+.nav-menu {
+    display:-webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content:space-between;
+    justify-content: space-between;
+    width: 93%;
+    margin: 0 auto;
+}
+
+
+nav a{
+    color: rgba(255,255,255,0.8);
+}
+
+nav img{
+    max-width: 50%;
+}
+
+.logo-container {
+    width: 25%;
+}
+
+.logo-container div {
+    display: flex;
+    align-items: center;
+}
+
+.desktop-nav-links div {
+    display: none;
+}
+
+.desktop-nav-links span{
+    color: rgba(255,255,255,0.8);
+    padding: 0.3em 0.2em;
+    cursor: pointer;
+}
+
+.focus{
+border: 1px solid #ff7008;
+}
+
+.mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-nav-links a {
+    padding: 1.2em 1em;
+}
+
+i#hamburger {
+    padding-right: 0.5em;
+}
+
+.hide{
+    /* display: none; */
+    opacity: 0;
+    height: 0;
+}
+
+.logo-container small{
+ font-family: 'Josefin Sans', sans-serif;
+ letter-spacing: 0.3em;
+ color: #ff7008;
+}
+
+.logo-container span {
+    font-size: 140%;
+}
+
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: .5;
+    z-index: 99;
+}
+
+@media only screen and (min-width: 768px) {
+    .mobile-nav-links a {
+        padding: 1.2em 2.5em;
+    }
+    .logo-container {
+        width: 15%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .logo-container {
+        width: 10%;
+    }
+    .desktop-nav-links span {
+        display: none;
+    }
+
+    .desktop-nav-links div {
+        display: flex;
+    }
+
+    .desktop-nav-links div a {
+        padding-left: 2em;
+    }
+
+
+}
+
+@media only screen and (min-width: 1440px) {
+    .logo-container {
+        width: 7%;
+    }
+    .nav-menu {
+        width: 77%;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .logo-container {
+        width: 4%;
+    }
+    .nav-menu {
+        width: 48%;
+    }
 }

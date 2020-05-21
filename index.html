@@ -4,12 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freshline Bar</title>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-   <section>
-       <h1>Fresline Bar</h1>
-   </section>
+<nav>
+    <div class="nav-menu">
+    <div class="logo-container">
+        <div>
+        <img src="images/logo-ii.png" alt="log of bar">
+        <span>Bar</span>
+    </div>
+        <small>FRESHLINE</small>
+    </div>
+    <div class="desktop-nav-links">
+       <span onclick="dropdown()" id="menu-span"><i class="fa fa-bars" id="hamburger"></i>MENU</span>
+       <div class="">
+           <a href="" style="color:#dd4d09;">Home</a>
+           <a href="">Menu</a>
+           <a href="">Services</a>
+           <a href="">About</a>
+           <a href="">Contact</a>
+           <a href="">Cart</a>
+       </div> 
+    </div>
+</div>
+    <div class="mobile-nav-links hide" id='mobile-nav-links'>
+        <a href="" style="color:#dd4d09;">Home</a>
+        <a href="">Menu</a>
+        <a href="">Services</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+        <a href="">Cart</a>       
+    </div>
+</nav>
+<section id='nav-overlay' class=""></section>
+
+<script src="js/script.js"></script>
 </body>
 </html>
