@@ -6,12 +6,12 @@ function dropdown(){
 
 showSlide(0);
 let autoslide =0;
-// setInterval(function(){
-//     showSlide(autoslide);
-//     autoslide++;
-//     autoslide= autoslide>2? 0 : autoslide;
+setInterval(function(){
+    showSlide(autoslide);
+    autoslide++;
+    autoslide= autoslide>2? 0 : autoslide;
     
-// },3500);
+},3500);
 
 function currentSlide(n){
     showSlide(n);
