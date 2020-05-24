@@ -1,4 +1,5 @@
 function dropdown(){
+    document.getElementById("mobile-nav-links").classList.toggle("fade");
     document.getElementById("mobile-nav-links").classList.toggle("hide");
     document.getElementById("menu-span").classList.toggle("focus");
     document.getElementById("nav-overlay").classList.toggle("nav-overlay");
@@ -11,7 +12,7 @@ setInterval(function(){
     autoslide++;
     autoslide= autoslide>2? 0 : autoslide;
     
-},3500);
+},4000);
 
 function currentSlide(n){
     showSlide(n);
