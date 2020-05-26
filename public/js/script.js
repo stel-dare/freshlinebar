@@ -1,3 +1,4 @@
+// Functin for menu dropdown on mobile
 function dropdown(){
     document.getElementById("mobile-nav-links").classList.toggle("fade");
     document.getElementById("mobile-nav-links").classList.toggle("hide");
@@ -5,6 +6,7 @@ function dropdown(){
     document.getElementById("nav-overlay").classList.toggle("nav-overlay");
 }
 
+//Logic for automatic slideshow
 showSlide(0);
 let autoslide =0;
 setInterval(function(){
@@ -14,10 +16,12 @@ setInterval(function(){
     
 },4000);
 
+//Function for manual slideshow
 function currentSlide(n){
     showSlide(n);
 }
 
+//Funtion for changing slides
 function showSlide(n){
     let slides = document.getElementsByClassName('slide');
     let dots = document.getElementsByClassName('dot');

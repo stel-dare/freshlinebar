@@ -1,3 +1,4 @@
+/* General Styles */
 body,html{
     margin:0;
     line-height: 1.8;
@@ -5,7 +6,7 @@ body,html{
     color: #fff;
     font-family: 'Poppins', sans-serif;
     height: 100%;
-    background: #211102;
+    background: #101203;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -13,6 +14,8 @@ a{
     text-decoration: none;
 }
 
+
+/* Navigation styles */
 nav{
     background:#0f1404;
     position: fixed;
@@ -105,6 +108,7 @@ i#hamburger {
     z-index: 99;
 }
 
+/* Home/slideshow section styles */
 
 .slideshow-container{
   width: 100%;
@@ -181,6 +185,7 @@ a.menu-link {
     background-color: #717171;
   }
 
+  /* Fade Animation */
   .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -197,6 +202,8 @@ a.menu-link {
     from {opacity: .4} 
     to {opacity: 1}
   }
+
+  /* Mini contact/address section */
 
   .contact-action {
     display: flex;
@@ -234,8 +241,34 @@ a.menu-link {
     justify-content: space-evenly;
 }
   
+/* About section */
+.restaurant-image-container {
+    width: 100%;
+}
+.restaurant-image-container img {
+    width: 100%;
+}
+
+.about-text h1 {
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.about-text {
+    padding: 0% 3%;
+}
+.about-text h1 {
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 160%;
+}
+
+.about-text p {
+    font-size: 95%;
+    color: rgba(255,255,255,0.8);
+}
 
 @media only screen and (min-width: 768px) {
+    /* Navigation styles */
     .mobile-nav-links a {
         padding: 1.2em 2.5em;
     }
@@ -243,6 +276,7 @@ a.menu-link {
         width: 15%;
     }
 
+    /* Home/slideshow section styles */
     .slide:nth-child(1){
         width: 60%;
     }
@@ -276,17 +310,34 @@ a.menu-link {
         width: 100%;
     }
 
+    /* Mini contact/address section */
     .mini-about {
         display: flex;
         justify-content: space-evenly;
+        padding: 0.3em 0em;
     }
 
     .contact-action {
         width: 32%;
     }
+
+    /* About section */
+    section.about {
+        display: flex;
+        align-items: center;
+    }
+
+    .restaurant-image-container {
+        width: 50%;
+    }
+
+    .about-text {
+        width: 50%;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
+    /* Navigation styles */
     .logo-container {
         width: 10%;
     }
@@ -302,6 +353,8 @@ a.menu-link {
         padding-left: 2em;
     }
 
+    /* Home/slideshow section styles */
+
     .slide:nth-child(1){
         width: 52%;
     }
@@ -310,6 +363,7 @@ a.menu-link {
         width: 80%;
     }
 
+    /* Mini contact/address section */
     .mini-contact {
         display: flex;
     }
@@ -317,12 +371,14 @@ a.menu-link {
     .mini-about {
     align-items: flex-start;
     width: 70%;
+    padding: 0.6em 0em;
     }
 
     
 .social-links {
     align-items: center;
     width: 30%;
+    font-size: 140%;
 }
 
 .contact-action-details h3 {
@@ -335,12 +391,15 @@ a.menu-link {
 }
 
 @media only screen and (min-width: 1440px) {
+    /* Navigation styles */
     .logo-container {
         width: 7%;
     }
     .nav-menu {
         width: 77%;
     }
+
+    /* Home/slideshow section styles */
     .slide:nth-child(1){
         width: 33%;
     }
@@ -349,22 +408,47 @@ a.menu-link {
         width: 66%;
     }
 
+    /* Mini contact/address section */
+
     .contact-action-details h3 {
         font-size: 100%;
     }
     .contact-action-details p {
         font-size: 90%;
     }
+
+    .social-links {
+        font-size: 150%;
+    }
+    .mini-about {
+        padding: 0.9em 0em;
+    }
+
+    /*About Section*/
+    .about-text {
+        padding: 0% 5%;
+    }
+
+    .about-text h1 {
+        font-size: 175%;
+    }
+
+    .about-text p {
+        font-size: 115%;
+    }
  
 }
 
 @media only screen and (min-width: 2560px) {
+    /* Navigation styles */
     .logo-container {
         width: 4%;
     }
     .nav-menu {
         width: 48%;
     }
+
+    /* Home/slideshow section styles */
     .slide:nth-child(1){
         width: 23%;
     }
@@ -372,10 +456,32 @@ a.menu-link {
     .slide:nth-child(2),.slide:nth-child(3){
         width: 50%;
     }
+
+    /* Mini contact/address section */
     .contact-action-details h3 {
         font-size: 110%;
     }
     .contact-action-details p {
         font-size: 100%;
-    }   
+    } 
+    .social-links {
+        font-size: 160%;
+    }  
+
+    .mini-about {
+        padding: 1.2em 0em;
+    }
+
+     /*About Section*/
+     .about-text {
+        padding: 0% 8%;
+    }
+
+    .about-text h1 {
+        font-size: 185%;
+    }
+
+    .about-text p {
+        font-size: 125%;
+    }
 }
