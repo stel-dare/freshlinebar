@@ -136,7 +136,7 @@ i#hamburger {
 
 .slide .subtitle {
     font-family: 'Nothing You Could Do', cursive;
-    color: #dd4d09;
+    color: #f88854;
     font-size: 180%;
 }
 
@@ -198,6 +198,41 @@ a.menu-link {
     to {opacity: 1}
   }
 
+  .contact-action {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-action .fa {
+    font-size: 130%;
+    color: #ff7008;
+}
+
+.contact-action-details {
+    width: 80%;
+}
+
+.contact-action-details h3 {
+    font-size: 80%;
+    margin-bottom: 0;
+}
+
+.contact-action-details p {
+    font-size: 70%;
+    text-transform: capitalize;
+    color: rgba(255,255,255,0.8);
+    margin-top: 0;
+}
+
+.social-links {
+    background: #ff7008;
+    color: #211102;
+    font-size: 130%;
+    padding: 0.5em 0em;
+    display: flex;
+    justify-content: space-evenly;
+}
   
 
 @media only screen and (min-width: 768px) {
@@ -240,6 +275,15 @@ a.menu-link {
     .slide-image img{
         width: 100%;
     }
+
+    .mini-about {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .contact-action {
+        width: 32%;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -266,6 +310,28 @@ a.menu-link {
         width: 80%;
     }
 
+    .mini-contact {
+        display: flex;
+    }
+
+    .mini-about {
+    align-items: flex-start;
+    width: 70%;
+    }
+
+    
+.social-links {
+    align-items: center;
+    width: 30%;
+}
+
+.contact-action-details h3 {
+    font-size: 90%;
+}
+.contact-action-details p {
+    font-size: 80%;
+}
+
 }
 
 @media only screen and (min-width: 1440px) {
@@ -281,6 +347,13 @@ a.menu-link {
 
     .slide:nth-child(2),.slide:nth-child(3){
         width: 66%;
+    }
+
+    .contact-action-details h3 {
+        font-size: 100%;
+    }
+    .contact-action-details p {
+        font-size: 90%;
     }
  
 }
@@ -299,5 +372,10 @@ a.menu-link {
     .slide:nth-child(2),.slide:nth-child(3){
         width: 50%;
     }
-   
+    .contact-action-details h3 {
+        font-size: 110%;
+    }
+    .contact-action-details p {
+        font-size: 100%;
+    }   
 }
