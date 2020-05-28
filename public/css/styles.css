@@ -14,7 +14,43 @@ a{
     text-decoration: none;
 }
 
-
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?z5b03v');
+    src:  url('../fonts/icomoon.eot?z5b03v#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?z5b03v') format('truetype'),
+      url('../fonts/icomoon.woff?z5b03v') format('woff'),
+      url('../fonts/icomoon.svg?z5b03v#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-flaticon-deliver:before {
+    content: "\e900";
+  }
+  .icon-flaticon-vegetables:before {
+    content: "\e901";
+  }
+  .icon-flaticon-recipe:before {
+    content: "\e902";
+  }
+  
 /* Navigation styles */
 nav{
     background:#0f1404;
@@ -267,6 +303,44 @@ a.menu-link {
     color: rgba(255,255,255,0.8);
 }
 
+/* Services Section */
+.services{
+    background: #ff7008;
+    color: #180e02; 
+    padding: 3em 0em;
+}
+
+section.services p {
+    font-size: 90%;
+}
+
+section.services h1, section.services h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 0;
+}
+
+.services-intro{
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services-list-item {
+    width: 85%;
+    padding: 2em 0em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.my-icon {
+    font-size: 400%;
+    padding: 0.3em;
+    border: 1px solid rgba(24, 14, 2, 0.5);
+}
+
 @media only screen and (min-width: 768px) {
     /* Navigation styles */
     .mobile-nav-links a {
@@ -334,6 +408,21 @@ a.menu-link {
     .about-text {
         width: 50%;
     }
+/* Services Section */
+.services-intro {
+    width: 50%;
+}
+.services-list {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+.services-list-item {
+    width: 27%;
+    margin: 0;
+}
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -387,6 +476,15 @@ a.menu-link {
 .contact-action-details p {
     font-size: 80%;
 }
+/* Services Section */
+.services-intro {
+    width: 40%;
+}
+
+.services-list {
+    width: 85%;
+    margin: 0 auto;
+}
 
 }
 
@@ -437,6 +535,14 @@ a.menu-link {
         font-size: 115%;
     }
  
+        /* Services Section */
+    .services-intro {
+        width: 30%;
+    }
+
+    .services-list {
+        width: 75%;
+    }
 }
 
 @media only screen and (min-width: 2560px) {
@@ -483,5 +589,14 @@ a.menu-link {
 
     .about-text p {
         font-size: 125%;
+    }
+
+     /* Services Section */
+    .services-intro {
+        width: 20%;
+    }
+
+    .services-list {
+        width: 65%;
     }
 }
