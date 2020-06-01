@@ -32,3 +32,11 @@ function showSlide(n){
     dots[n].classList.add('active');
 
 }
+
+//Function for displaying menu details
+function displayDetails(dish){
+let allDishes = document.getElementsByClassName('meal-item-details');
+let hidden = dish.getElementsByClassName('meal-item-details')[0].classList.contains('hide');
+for(let i=0; i<allDishes.length;i++){allDishes[i].classList.add('hide');}
+hidden? dish.getElementsByClassName('meal-item-details')[0].classList.remove('hide') : dish.getElementsByClassName('meal-item-details')[0].classList.add('hide');
+}

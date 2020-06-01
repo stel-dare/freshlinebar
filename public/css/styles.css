@@ -285,14 +285,14 @@ a.menu-link {
     width: 100%;
 }
 
-.about-text h1 {
+/* .about-text h2 {
     text-transform: uppercase;
     font-family: 'Josefin Sans', sans-serif;
-}
+} */
 .about-text {
     padding: 0% 3%;
 }
-.about-text h1 {
+.about-text h2 {
     text-transform: uppercase;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 160%;
@@ -310,16 +310,16 @@ a.menu-link {
     padding: 3em 0em;
 }
 
-section.services p {
+section.services p, .menu p {
     font-size: 90%;
 }
 
-section.services h1, section.services h3 {
+section.services h2, section.services h3, .menu h2, .menu h3 {
     font-family: 'Josefin Sans', sans-serif;
     margin-bottom: 0;
 }
 
-.services-intro{
+.services-intro,.menu-intro{
     width: 85%;
     margin: 0 auto;
     text-align: center;
@@ -341,6 +341,82 @@ section.services h1, section.services h3 {
     border: 1px solid rgba(24, 14, 2, 0.5);
 }
 
+    /* Menu Section */
+    .menu{
+        padding: 3em 0em;
+    }
+    .menu p{
+        color: rgba(255,255,255,0.8);
+    }
+    .menu-list-container{
+        padding: 3em 0em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .meal-image-container img{
+        width: 100%;
+        vertical-align: middle;
+    }
+    .meal-image-container{
+        width: 100%;
+    }
+
+    .meal-item-container{
+        cursor: pointer;
+        position: relative;
+    }
+
+    .menu a {
+        text-align: center;
+        display: table;
+        color: #fff;
+        border: 1px solid #fff;
+        margin: 0 auto;
+        padding: 0.7em 1em;
+        font-size: larger;
+    }
+    .meal-item-details {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #101203;
+        opacity: .9;
+        /* display: none; */
+    }
+    .meal-item-details div:nth-child(1) {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .meal-item-details span {
+        color: #ff7008;
+    }
+
+    .meal-item-details button:nth-child(1) {
+        background: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 0.7em 1em;
+        margin-right: 1.3em;
+    }
+
+    .meal-item-details button:nth-child(2) {
+        background: transparent;
+        color: #ff7008;
+        border: 1px solid #ff7008;
+        padding: 0.7em 1em;
+    }
+
+    .meal-item-details div:nth-child(1) div {
+        padding: 0.5em 0em 0em 0em;
+    }
+
+    .meal-item-container:hover .meal-item-details{
+        display: block;
+    }
 @media only screen and (min-width: 768px) {
     /* Navigation styles */
     .mobile-nav-links a {
@@ -409,7 +485,7 @@ section.services h1, section.services h3 {
         width: 50%;
     }
 /* Services Section */
-.services-intro {
+.services-intro, .menu-intro {
     width: 50%;
 }
 .services-list {
@@ -421,6 +497,17 @@ section.services h1, section.services h3 {
 .services-list-item {
     width: 27%;
     margin: 0;
+}
+
+/* Menu Section */
+.menu-list-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.meal-item-container{
+    width: 50%;
+
 }
 
 }
@@ -477,13 +564,19 @@ section.services h1, section.services h3 {
     font-size: 80%;
 }
 /* Services Section */
-.services-intro {
+.services-intro , .menu-intro{
     width: 40%;
 }
 
 .services-list {
     width: 85%;
     margin: 0 auto;
+}
+
+/* Menu Section */
+.meal-item-container{
+    width: 33.33%;
+
 }
 
 }
@@ -527,7 +620,7 @@ section.services h1, section.services h3 {
         padding: 0% 5%;
     }
 
-    .about-text h1 {
+    .about-text h2 {
         font-size: 175%;
     }
 
@@ -536,12 +629,18 @@ section.services h1, section.services h3 {
     }
  
         /* Services Section */
-    .services-intro {
+    .services-intro, .menu-intro {
         width: 30%;
     }
 
     .services-list {
         width: 75%;
+    }
+
+    /* Menu Section */
+    .meal-item-container{
+        width: 25%;
+
     }
 }
 
@@ -583,7 +682,7 @@ section.services h1, section.services h3 {
         padding: 0% 8%;
     }
 
-    .about-text h1 {
+    .about-text h2 {
         font-size: 185%;
     }
 
@@ -592,11 +691,17 @@ section.services h1, section.services h3 {
     }
 
      /* Services Section */
-    .services-intro {
+    .services-intro,.menu-intro {
         width: 20%;
     }
 
     .services-list {
         width: 65%;
+    }
+
+     /* Menu Section */
+     .meal-item-container{
+        width: 16.66%;
+
     }
 }
