@@ -417,6 +417,18 @@ section.services h2, section.services h3, .menu h2, .menu h3 {
     /* .meal-item-container:hover .meal-item-details{
         display: block;
     } */
+
+    /* Gallary section */
+    .gallary{
+        padding: 3em 0em 0em 0em;
+    }
+    .gallary-image-container {
+        width: 100%;
+    }
+    .gallary-image-container img {
+        width: 100%;
+        vertical-align: middle;
+    }
 @media only screen and (min-width: 768px) {
     /* Navigation styles */
     .mobile-nav-links a {
@@ -508,6 +520,15 @@ section.services h2, section.services h3, .menu h2, .menu h3 {
 .meal-item-container{
     width: 50%;
 
+}
+
+/* Gallary section */
+.gallary{
+    display: flex;
+}
+
+.gallary-image-container{
+    width:25%
 }
 
 }
