@@ -438,6 +438,9 @@ section.services h2, section.services h3, .menu h2, .menu h3 {
     }
 
     /* Maxi Contact Us section */
+    .maxi-contact {
+        background: #171401;
+    }
     .map{
         width: 100%;
         height: 25em;
@@ -488,6 +491,27 @@ section.services h2, section.services h3, .menu h2, .menu h3 {
     }
     form div:focus-within label{
         color:#ff7008 ;
+    }
+
+    /* Footer section */
+    footer{
+        padding: 5em 1em;
+        text-align: center;
+    }
+    footer p:nth-child(1) {
+        font-family: 'Nothing You Could Do', cursive;
+        font-size: 150%;
+    }
+    footer p:nth-child(1) span {
+        color: #ff7008;
+    }
+
+    footer p:nth-child(2){
+    color: rgba(255,255,255,0.8);
+    }
+
+    footer .icon-flaticon-recipe{
+        font-size: 130%;
     }
 
 
@@ -604,6 +628,11 @@ section.services h2, section.services h3, .menu h2, .menu h3 {
     width: 50%;
     height: auto;
 }
+
+/* footer section */
+footer p:nth-child(1) {
+    font-size: 160%;
+}
 }
 
 @media only screen and (min-width: 1024px) {
@@ -676,6 +705,11 @@ section.services h2, section.services h3, .menu h2, .menu h3 {
     display: block;
 }
 
+/* footer section */
+footer p:nth-child(1) {
+    font-size: 170%;
+}
+
 }
 
 @media only screen and (min-width: 1440px) {
@@ -744,6 +778,10 @@ section.services h2, section.services h3, .menu h2, .menu h3 {
     form{
         width: 80%;
     }
+    /* footer section */
+footer p:nth-child(1) {
+    font-size: 180%;
+}
 }
 
 @media only screen and (min-width: 2560px) {
@@ -810,5 +848,10 @@ section.services h2, section.services h3, .menu h2, .menu h3 {
      /* Maxi Contact Section */
      form{
         width: 70%;
+    }
+
+    /* footer section */
+    footer p:nth-child(1) {
+        font-size: 190%;
     }
 }
