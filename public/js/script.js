@@ -40,3 +40,11 @@ let hidden = dish.getElementsByClassName('meal-item-details')[0].classList.conta
 for(let i=0; i<allDishes.length;i++){allDishes[i].classList.add('hide');}
 hidden? dish.getElementsByClassName('meal-item-details')[0].classList.remove('hide') : dish.getElementsByClassName('meal-item-details')[0].classList.add('hide');
 }
+
+//Google maps marker function
+function initMap() {
+    var uluru = {lat: 4.900686,lng: -1.756553};
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 15, center: uluru});
+    var marker = new google.maps.Marker({position: uluru, map: map});
+  }

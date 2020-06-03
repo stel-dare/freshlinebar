@@ -418,6 +418,13 @@ section.services h2, section.services h3, .menu h2, .menu h3 {
         display: block;
     } */
 
+    /* Invitation */
+    .invitation {
+        text-align: center;
+        /* color: #ff7008; */
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
     /* Gallary section */
     .gallary{
         padding: 3em 0em 0em 0em;
@@ -429,6 +436,61 @@ section.services h2, section.services h3, .menu h2, .menu h3 {
         width: 100%;
         vertical-align: middle;
     }
+
+    /* Maxi Contact Us section */
+    .map{
+        width: 100%;
+        height: 25em;
+        color: gray;
+    }
+    .contact-form {
+        padding: 3em 0em;
+    }
+    .contact-form h3 {
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        color: rgba(255,255,255,0.8);
+        width: 90%;
+        margin: 0 auto;
+    }
+    form div{
+        display: flex;
+        flex-direction: column;
+    }
+    form label {
+        font-size: 90%;
+    }
+    form input, form textarea {
+        background: transparent;
+        border: none;
+        border-bottom: 0.1rem solid #343a40;
+        margin: 0em 0em 3em 0em;
+        font-size: 110%;
+        color: rgba(255,255,255,0.8);
+        font-family: 'Poppins', sans-serif;
+    }
+    form button {
+        padding: 1.3em 3em;
+        background: #ff7008;
+        color: #211102;
+        border: none;
+        margin: 0 auto;
+    }
+    form input:focus , form textarea:focus{
+        /* border: none; */
+        outline: none;
+        border-bottom: 0.1rem solid #ff7008;
+    }
+    form div:focus-within label{
+        color:#ff7008 ;
+    }
+
+
 @media only screen and (min-width: 768px) {
     /* Navigation styles */
     .mobile-nav-links a {
@@ -531,6 +593,17 @@ section.services h2, section.services h3, .menu h2, .menu h3 {
     width:25%
 }
 
+/* Maxi Contact Us section */
+.maxi-contact{
+    display: flex;
+}
+.contact-form {
+    width: 50%;
+}
+.map{
+    width: 50%;
+    height: auto;
+}
 }
 
 @media only screen and (min-width: 1024px) {
@@ -666,6 +739,11 @@ section.services h2, section.services h3, .menu h2, .menu h3 {
         width: 25%;
 
     }
+
+    /* Maxi Contact Section */
+    form{
+        width: 80%;
+    }
 }
 
 @media only screen and (min-width: 2560px) {
@@ -727,5 +805,10 @@ section.services h2, section.services h3, .menu h2, .menu h3 {
      .meal-item-container{
         width: 16.66%;
 
+    }
+
+     /* Maxi Contact Section */
+     form{
+        width: 70%;
     }
 }
