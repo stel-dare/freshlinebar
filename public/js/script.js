@@ -42,14 +42,14 @@ function showSlide(n){
 // }
 
 //Function for displaying menu details through opacity and stoping animation
-function displayDetails(dish){
-    let allDishes = document.getElementsByClassName('meal-item-details');
-    let dishOpacity = dish.getElementsByClassName('meal-item-details')[0].classList.contains('opacity');
-    for(let i=0; i<allDishes.length;i++){allDishes[i].classList.remove('fadeX');}
-    for(let i=0; i<allDishes.length;i++){allDishes[i].classList.add('opacity');}
-    // console.log(dishOpacity); 
-    dishOpacity? dish.getElementsByClassName('meal-item-details')[0].classList.remove('opacity') : dish.getElementsByClassName('meal-item-details')[0].classList.add('opacity');
-    }
+// function displayDetails(dish){
+//     let allDishes = document.getElementsByClassName('meal-item-details');
+//     let dishOpacity = dish.getElementsByClassName('meal-item-details')[0].classList.contains('opacity');
+//     for(let i=0; i<allDishes.length;i++){allDishes[i].classList.remove('fadeX');}
+//     for(let i=0; i<allDishes.length;i++){allDishes[i].classList.add('opacity');}
+//     // console.log(dishOpacity); 
+//     dishOpacity? dish.getElementsByClassName('meal-item-details')[0].classList.remove('opacity') : dish.getElementsByClassName('meal-item-details')[0].classList.add('opacity');
+//     }
 
 
 //Google maps marker function

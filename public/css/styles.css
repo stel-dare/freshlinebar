@@ -240,7 +240,7 @@ a.menu-link {
   }
 
   /* Fade animation for displaying food details */
-  .fadeX {
+  /* .fadeX {
     -webkit-animation-name: fadeX;
     -webkit-animation-duration: 5s;
     animation-name: fadeX;
@@ -254,11 +254,11 @@ a.menu-link {
     100% { opacity:0; } 
   }
   
-  @keyframes fade {
+  @keyframes fadeX {
     0%   { opacity:0; }
     50%  { opacity:0.9; }
     100% { opacity:0; }
-  }
+  } */
 
   /* Mini contact/address section */
 
@@ -380,12 +380,18 @@ section.services h2, section.services h3, .menu h2, .menu h3 {
         vertical-align: middle;
     }
     .meal-image-container{
-        width: 100%;
+        width: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
     }
 
     .meal-item-container{
         cursor: pointer;
-        position: relative;
+        /* position: relative; */
+        display: flex;
+        width: 100%;
+        margin-bottom: 3em;
     }
 
     .menu a {
@@ -398,18 +404,18 @@ section.services h2, section.services h3, .menu h2, .menu h3 {
         font-size: larger;
     }
     .meal-item-details {
-        position: absolute;
+        /* position: absolute;
         top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        left: 0; */
+        width: 50%;
+        /* height: 100%; */
         background: #101203;
-        opacity: .9;
+        /* opacity: .9; */
         /* display: none; */
     }
-    .opacity{
+    /* .opacity{
         opacity: 0;
-    }
+    } */
     .meal-item-details div:nth-child(1) {
         width: 90%;
         margin: 0 auto;
@@ -424,7 +430,8 @@ section.services h2, section.services h3, .menu h2, .menu h3 {
         color: #fff;
         border: 1px solid #fff;
         padding: 0.7em 1em;
-        margin-right: 1.3em;
+        /* margin-bottom: 1.3em; */
+        margin:0em 0em 1.3em 0em;
     }
 
     .meal-item-details button:nth-child(2) {
@@ -435,7 +442,10 @@ section.services h2, section.services h3, .menu h2, .menu h3 {
     }
 
     .meal-item-details div:nth-child(1) div {
-        padding: 0.5em 0em 0em 0em;
+        padding: 1em 0em 0em 0em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     /* .meal-item-container:hover .meal-item-details{
@@ -628,8 +638,16 @@ section.services h2, section.services h3, .menu h2, .menu h3 {
 }
 
 .meal-item-container{
-    width: 50%;
+    /* width: 50%; */
 
+}
+
+.meal-item-details div:nth-child(1) div{
+    flex-direction: row;
+}
+
+.meal-item-details button:nth-child(1){
+    margin: 0em 1.3em 0em 0em;
 }
 
 /* Gallary section */
@@ -725,6 +743,13 @@ footer p:nth-child(1) {
     width: 33.33%;
 
 }
+.meal-item-details div:nth-child(1) div{
+    flex-direction: column;
+}
+
+.meal-item-details button:nth-child(1){
+    margin: 0em 0em 1.3em 0em;
+}
 /* .meal-item-container:hover .meal-item-details{
     opacity: .9;
 } */
@@ -794,9 +819,17 @@ footer p:nth-child(1) {
 
     /* Menu Section */
     .meal-item-container{
-        width: 25%;
+        /* width: 25%; */
 
     }
+    
+.meal-item-details div:nth-child(1) div{
+    flex-direction: row;
+}
+
+.meal-item-details button:nth-child(1){
+    margin: 0em 1.3em 0em 0em;
+}
 
     /* Maxi Contact Section */
     form{
@@ -864,10 +897,10 @@ footer p:nth-child(1) {
     }
 
      /* Menu Section */
-     .meal-item-container{
+     /* .meal-item-container{
         width: 16.66%;
 
-    }
+    } */
 
      /* Maxi Contact Section */
      form{
