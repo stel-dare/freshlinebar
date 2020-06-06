@@ -1,0 +1,106 @@
+/* Geneal styles */
+h1,h2,h3{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Home Section styles */
+.home-section{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/wood-v.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-section a:nth-child(1){
+    color: #fff;
+    padding-right: 1em;
+}
+
+.home-section a:nth-child(2){
+    color: rgba(255,255,255,0.6);
+}
+
+section.home-section h1 {
+    font-size: 200%;
+}
+
+/* Contact Info Styles */
+.contact-info {
+    padding: 3em 0em 0em 0em;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.contact-info p span, .contact-info p i {
+    color: #ff7008;
+}
+
+.contact-info p:nth-child(2) span{
+    color: rgba(255,255,255,0.8);
+}
+
+.contact-info .fa {
+    font-size: 130%;
+    padding-right: 0.5em;
+}
+
+@media only screen and (min-width: 768px) {
+    /* Contact info section styles */
+    .conact-section {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding: 3em 0em;
+        background: #171401;
+    }
+    #map{
+        display: none;
+    }
+    .contact-info {
+        padding: 0em 0em 0em 0em;
+        width: 40%;
+        margin: 0;
+    }
+
+    .contact-form {
+        width: 54%;
+        padding: 0em;
+    }
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    .contact-info {
+        width: 35%;       
+    }
+
+    .contact-form {
+        width: 49%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .contact-info {
+        width: 30%;       
+    }
+
+    .contact-form {
+        width: 44%;
+    }  
+}
+
+@media only screen and (min-width: 2560px) {
+    .contact-info {
+        width: 25%;       
+    }
+
+    .contact-form {
+        width: 39%;
+    } 
+}

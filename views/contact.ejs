@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshline Bar - Contact</title>
+    <!-- Start:General Styles -->
+    <%- include('layouts/general-styles'); -%>
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- End: General Styles -->
+</head>
+<body>
+   <!-- Start: Navigation -->
+    <%- include('layouts/nav'); -%>
+    <!-- End: Navigation -->
+    <!-- Start: Home Section -->
+    <section class="home-section">
+        <h1>CONTACT US</h1>
+        <p><a href="#">HOME</a> <a href="#">CONTACT</a></p>
+    </section>   
+    <!-- End:Home Section  -->
+    <!-- start: Contact Information Section -->
+    <section class='conact-section'>
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Address: <span>John Sarbah Blvd , Adjacent shelling filling station ,Takoradi.</span></p>
+            <p>Phone: <span>059 281 2318, 050 000 4597</span></p>
+            <p>Email: <span>freshlinebar@ymail.com</span></p>
+            <p>Social: <i class="fa fa-facebook" aria-hidden="true"></i> <i class="fa fa-twitter" aria-hidden="true"></i> <i class="fa fa-instagram" aria-hidden="true"></i></p>
+        </div>
+        <div class="contact-form">
+            <form action="/">
+                <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="3"></textarea>
+            </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div class="map" id="map"></div>
+    </section>
+    <!-- end: Contact Information Section -->
+<!-- start:footer -->
+<%- include('layouts/footer'); -%>
+<!-- End:footer -->
+
+
+<!-- Start:Scripts -->
+    <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-7DBQJFWY7yUp2tTPv5fnd3_mImzggdo&callback=initMap">
+</script>
+    <!-- Start:Genral Scripts -->
+<%- include('layouts/general-scripts'); -%>
+<!-- End:Genral Scripts -->
+<!-- End:Scripts -->
+
+</body>
+</html>

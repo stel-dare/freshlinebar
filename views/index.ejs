@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshline Bar</title>
+<!-- Start:General Styles -->
+<%- include('layouts/general-styles'); -%>
+<!-- End: General Styles -->
+</head>
+<body>
+   <!-- Start: Navigation -->
+   <%- include('layouts/nav'); -%>
+<!-- End: Navigation -->
+<!-- Start: Slideshow/Home section -->
+<section class='slideshow-container'>
+   <div class="slide fade">
+    <div class="slide-description">
+       <span class="subtitle">Welcome</span>
+       <h1 class='title'>aliquet eget sit amet tellus</h1>
+       <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
+       <div class="slide-links">
+       <a href="" class="order-link">Order Now</a>
+       <a href="" class="menu-link">View Menu</a>
+    </div>
+    </div>
+   </div>
+
+   <div class="slide fade">
+    <div class="slide-description">
+    <span class="subtitle">Refreshing</span>
+    <h1 class='title'>turpis egestas sed tempus urna</h1>
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
+    <div class="slide-links">
+    <a href="" class="order-link">Order Now</a>
+    <a href="" class="menu-link">View Menu</a>
+ </div>
+    </div>
+ <div class="slide-image"><img src="images/breakfast-iii-reduced.png" alt="breakfast"></div>
+</div>
+
+<div class="slide fade">
+    <div class="slide-description">
+    <span class="subtitle">Delicious</span>
+    <h1 class='title'>sagittis orci a scelerisque purus</h1>
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
+    <div class="slide-links">
+    <a href="" class="order-link">Order Now</a>
+    <a href="" class="menu-link">View Menu</a>
+ </div>
+</div>
+<div class="slide-image"><img src="images/breakfast-ii.png" alt="breakfast"></div>
+</div>
+
+<div class="dot-container">
+    <span class="dot" onclick="currentSlide(0)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+</div>
+</section>
+<!-- End: Slideshow/Home section -->
+
+<!-- start: Mini Address/contact section -->
+<section class="mini-contact">
+    <div class="mini-about">
+        <div class="contact-action"><i class="fa fa-phone" aria-hidden="true"></i><div class="contact-action-details"><h3>+233 50 000 4597</h3><p>tincidunt arcu non sodales neque</p></div></div>
+        <div class="contact-action"><i class="fa fa-map-marker" aria-hidden="true"></i><div class="contact-action-details"><h3>John Sarbah Blvd</h3><p>Adjacent shelling filling station, Takoradi.</p></div></div>
+        <div class="contact-action"><i class="fa fa-clock-o" aria-hidden="true"></i><div class="contact-action-details"><h3>Open Monday - Sunday</h3><p>8:00am - 9:00pm</p></div></div>
+    </div>
+    <div class="social-links">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+    </div>
+</section>
+<!-- End: Mini Address/contact section -->
+
+<!-- start: About section -->
+<section class="about">
+    <div class="restaurant-image-container">
+        <img src="images/restaurant-ii-s.jpg" alt="">
+    </div>
+    <div class="about-text">
+        <h2>Welcome to freshline breakfast bar</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Accumsan in nisl nisi scelerisque eu ultrices vitae auctor. Accumsan sit amet nulla facilisi morbi tempus iaculis urna id.
+            Odio ut sem nulla pharetra diam sit amet. Congue eu consequat ac felis donec et.
+             In hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. 
+        </p>
+    </div>
+
+</section>
+<!-- end: About section -->
+<!-- start: Services section -->
+<section class="services">
+    <div class="services-intro">
+        <h2>OUR SERVICES</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            </p>
+    </div>
+    <div class="services-list">
+        <div class="services-list-item">
+            <span class="icon-flaticon-vegetables my-icon"></span>
+            <h3>FRESH INGREDIENTS</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="services-list-item">
+            <span class="icon-flaticon-deliver my-icon"></span>
+            <h3>FAST DELIVERY</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="services-list-item">
+            <span class="icon-flaticon-recipe my-icon"></span>
+            <h3>ORIGINAL RECIPES</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+</section>
+<!-- end: Services section -->
+
+<!-- start: Menu section -->
+<section class="menu">
+    <div class="menu-intro">
+        <h2>OUR MENU SPECIALS</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut aliqua. 
+            </p>
+    </div>
+    <div class="menu-list-container">
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/breakfast-menu-ii.jpg);">
+                <!-- <img src="images/breakfast-menu-ii.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>Pancake Jumbo</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 15.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/breakfast-menu-kii.jpg);">
+                <!-- <img src="images/breakfast-menu-kii.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>Savanna Juice</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 8.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/breakfast-menu-x.jpg);">
+                <!-- <img src="images/breakfast-menu-x.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>Tropical Mix</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 8.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/breakfast-menu-j.jpg);">
+                <!-- <img src="images/breakfast-menu-j.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>Avenger Breakfast</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 35.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="meal-item-container" >
+            <div class="meal-image-container" style="background-image: url(../images/breakfast-menu-ji.jpg);">
+                <!-- <img src="images/breakfast-menu-ji.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>iChef Morning</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 25.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/breakfast-menu-viii.jpg);">
+                <!-- <img src="images/breakfast-menu-viii.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>Vita Rambo</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 10.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <a href="#">View Our Menu</a>
+</section>
+<!-- end: Menu section -->
+<!-- start: Gallary section -->
+<h2 class="invitation">Come Visit Us</h2>
+<section class="gallary">
+    <div class="gallary-image-container">
+        <img src="images/gallary-kii.jpg" alt="">
+    </div>
+    <div class="gallary-image-container">
+        <img src="images/gallary-q.jpg" alt="">
+    </div>
+    <div class="gallary-image-container">
+        <img src="images/gallary-x.jpg" alt="">
+    </div>
+    <div class="gallary-image-container">
+        <img src="images/gallary-xm.jpg" alt="">
+    </div>  
+</section>
+<!-- end: Gallary section -->
+<!-- start: Max contact section -->
+<section class="maxi-contact">
+    <div class="map" id="map"></div>
+    <div class="contact-form">
+        <h3>Contact Us</h3>
+        <form action="/">
+            <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="3"></textarea>
+        </div>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</section>
+
+<!-- end: Max contact section -->
+<!-- Start:footer -->
+<%- include('layouts/footer'); -%>
+<!-- End:footer -->
+<!-- start: Scripts -->
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-7DBQJFWY7yUp2tTPv5fnd3_mImzggdo&callback=initMap">
+</script>
+<!-- Start:Genral Scripts -->
+<%- include('layouts/general-scripts'); -%>
+<!-- End:Genral Scripts -->
+<!-- End: Scripts -->
+</body>
+</html>
