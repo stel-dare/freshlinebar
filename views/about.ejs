@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshline Bar - About</title>
+    <!-- Start:General Styles -->
+    <%- include('layouts/general-styles'); -%>
+    <link rel="stylesheet" href="css/about.css">
+    <!-- End: General Styles -->
+</head>
+<body>
+   <!-- Start: Navigation -->
+   <%- include('layouts/nav'); -%>
+   <!-- End: Navigation -->
+
+       <!-- Start: Home Section -->
+       <section class="home-section">
+        <h1>ABOUT US</h1>
+        <p><a href="#">HOME</a> <a href="#">ABOUT</a></p>
+    </section>   
+    <!-- End:Home Section  -->
+
+    <!-- start: Mini Address/contact section -->
+<section class="mini-contact">
+    <div class="mini-about">
+        <div class="contact-action"><i class="fa fa-phone" aria-hidden="true"></i><div class="contact-action-details"><h3>+233 50 000 4597</h3><p>tincidunt arcu non sodales neque</p></div></div>
+        <div class="contact-action"><i class="fa fa-map-marker" aria-hidden="true"></i><div class="contact-action-details"><h3>John Sarbah Blvd</h3><p>Adjacent shelling filling station, Takoradi.</p></div></div>
+        <div class="contact-action"><i class="fa fa-clock-o" aria-hidden="true"></i><div class="contact-action-details"><h3>Open Monday - Sunday</h3><p>8:00am - 9:00pm</p></div></div>
+    </div>
+    <div class="social-links">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+    </div>
+</section>
+<!-- End: Mini Address/contact section -->
+
+<!-- start: About section -->
+<section class="about">
+    <div class="restaurant-image-container">
+        <img src="images/restaurant-ii-s.jpg" alt="">
+    </div>
+    <div class="about-text">
+        <h2>Welcome to freshline breakfast bar</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Accumsan in nisl nisi scelerisque eu ultrices vitae auctor. Accumsan sit amet nulla facilisi morbi tempus iaculis urna id.
+            Odio ut sem nulla pharetra diam sit amet. Congue eu consequat ac felis donec et.
+             In hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. 
+        </p>
+    </div>
+
+</section>
+<!-- end: About section -->
+
+<!-- start: Chef section -->
+<section class="chef-section">
+    <div class="chef-intro menu-intro">
+        <h2>OUR CHEFS</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="chef-list">
+        <div class="chef-item">
+            <div class="chef-image-conatiner">
+                <img src="images/chef-a.jpg" alt="">
+            </div>
+            <h3>BRUCE BANNER</h3>
+            <P>Chief Cook</P>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="chef-item">
+            <div class="chef-image-conatiner">
+                <img src="images/chef-b.jpg" alt="">
+            </div>
+            <h3>STEVE ROGGERS</h3>
+            <P>Breakfast Chef</P>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="chef-item">
+            <div class="chef-image-conatiner">
+                <img src="images/chef-c.jpg" alt="">
+            </div>
+            <h3>MARIA HILL</h3>
+            <P>Dessert Chef</P>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="chef-item">
+            <div class="chef-image-conatiner">
+                <img src="images/chef-d.jpg" alt="">
+            </div>
+            <h3>NATASHA ROMAN0FF</h3>
+            <P>Smoothie Chef</P>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+</section>
+<!-- end: Chef section -->
+   <!-- start: Max contact section -->
+<section class="maxi-contact">
+    <div class="map" id="map"></div>
+    <div class="contact-form">
+        <h3>Contact Us</h3>
+        <form action="/">
+            <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="3"></textarea>
+        </div>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</section>
+
+<!-- end: Max contact section -->
+<!-- Start:footer -->
+<%- include('layouts/footer'); -%>
+<!-- End:footer -->
+<!-- Start:Scripts -->
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-7DBQJFWY7yUp2tTPv5fnd3_mImzggdo&callback=initMap">
+</script>
+  <!-- Start:Genral Scripts -->
+<%- include('layouts/general-scripts'); -%>
+<!-- End:Genral Scripts -->
+<!-- End:Scripts -->
+</body>
+</html>

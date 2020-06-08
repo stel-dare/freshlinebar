@@ -76,6 +76,7 @@ section.home-section h1 {
 }
 
 @media only screen and (min-width: 1024px) {
+    /* Contact info section styles */
     .contact-info {
         width: 35%;       
     }
@@ -86,6 +87,7 @@ section.home-section h1 {
 }
 
 @media only screen and (min-width: 1440px) {
+    /* Contact info section styles */
     .contact-info {
         width: 30%;       
     }
@@ -96,6 +98,7 @@ section.home-section h1 {
 }
 
 @media only screen and (min-width: 2560px) {
+    /* Contact info section styles */
     .contact-info {
         width: 25%;       
     }
