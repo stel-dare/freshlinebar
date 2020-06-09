@@ -18,6 +18,9 @@ app.get('/about',(req,res)=>{
 app.get('/services',(req,res)=>{
     res.render('services');
 });
+app.get('/menu',(req,res)=>{
+    res.render('menu');
+});
 app.listen(process.env.PORT || 3000,()=>{
     console.log('Listening on port 3000');
 });

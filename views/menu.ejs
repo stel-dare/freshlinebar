@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshline Bar - Menu</title>
+    <!-- Start:General Styles -->
+    <%- include('layouts/general-styles'); -%>
+    <link rel="stylesheet" href="css/menu.css">
+    <!-- End: General Styles -->
+</head>
+<body>
+   <!-- Start: Navigation -->
+   <%- include('layouts/nav'); -%>
+   <!-- End: Navigation -->
+   <!-- Start: Home Section -->
+   <section class="home-section">
+       <h1>OUR MENU</h1>
+       <p><a href="/">HOME</a> <a href="#">MENU</a></p>
+   </section>   
+   <!-- End:Home Section  --> 
+   <!-- start: Menu section -->
+<section class="menu">
+    <div class="menu-intro">
+        <h2>OUR MENU SPECIALS</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut aliqua. 
+            </p>
+    </div>
+    <div class="menu-list-container">
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/breakfast-menu-ii.jpg);">
+                <!-- <img src="images/breakfast-menu-ii.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>Pancake Jumbo</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 15.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/breakfast-menu-kii.jpg);">
+                <!-- <img src="images/breakfast-menu-kii.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>Savanna Juice</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 8.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/breakfast-menu-x.jpg);">
+                <!-- <img src="images/breakfast-menu-x.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>Tropical Mix</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 8.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/breakfast-menu-j.jpg);">
+                <!-- <img src="images/breakfast-menu-j.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>Avenger Breakfast</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 35.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="meal-item-container" >
+            <div class="meal-image-container" style="background-image: url(../images/breakfast-menu-ji.jpg);">
+                <!-- <img src="images/breakfast-menu-ji.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>iChef Morning</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 25.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/breakfast-menu-viii.jpg);">
+                <!-- <img src="images/breakfast-menu-viii.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>Vita Rambo</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 10.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- <a href="#">View Our Menu</a> -->
+</section>
+<!-- end: Menu section --> 
+
+<!-- start:Menu pricing intro -->
+<div class="menu-intro">
+    <h2>OUR MENU PRICING</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut aliqua. 
+        </p>
+</div>
+<!-- end:Menu pricing intro -->
+
+   <!-- start:Menu Tags -->
+   <section class="menu-tags" id="menu-tags">
+       <span onclick="displayTagMenu(this)" id='breakfast' class="selected-tag">Breakfast</span>
+       <span onclick="displayTagMenu(this)" id='breakfast-combo'>Breakfast Combo</span>
+       <span onclick="displayTagMenu(this)" id='sandwich'>Sandwich</span>
+       <span onclick="displayTagMenu(this)" id='smoothies'>Smoothies</span>
+       <span onclick="displayTagMenu(this)" id='milkshakes'>Milkshake</span>
+       <span onclick="displayTagMenu(this)" id='salad'>Salad</span>
+       <span onclick="displayTagMenu(this)" id='extra'>Extra</span>
+   </section>
+   <!-- end:Menu Tags -->
+<!-- start:Menu tags corresponding menu -->
+   <!-- start: Menu section -->
+   <section class="menu breakfast tag-menu">
+    <div class="menu-list-container">
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/breakfast-tag-ii.jpg);">
+                <!-- <img src="images/breakfast-menu-ii.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>American Waffles</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 5.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/breakfast-tag-i.jpg);">
+                <!-- <img src="images/breakfast-menu-kii.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>Eggs</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 8.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/breakfast-tag-iii.jpg);">
+                <!-- <img src="images/breakfast-menu-x.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>Oatsmeal</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 5.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/breakfast-tag-iv.jpg);">
+                <!-- <img src="images/breakfast-menu-j.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>Irish Pancakes</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 5.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="menu breakfast-combo tag-menu hide">
+    <div class="menu-list-container">
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/breakfast-combo-tag-i.jpg);">
+                <!-- <img src="images/breakfast-menu-ii.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>The Burger Meal</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 20.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/breakfast-combo-tag-ii.jpg);">
+                <!-- <img src="images/breakfast-menu-kii.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>Burger Brown</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 18.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/breakfast-combo-tag-iii.jpg);">
+                <!-- <img src="images/breakfast-menu-x.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>Stake Lover</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 20.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="menu sandwich tag-menu hide">
+    <div class="menu-list-container">
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/sandwich-tag-i.jpg);">
+                <!-- <img src="images/breakfast-menu-ii.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>Basil Sandwich</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 10.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/sandwich-tag-ii.jpg);">
+                <!-- <img src="images/breakfast-menu-kii.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>Club Sandwich</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 12.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/sandwich-tag-iii.jpg);">
+                <!-- <img src="images/breakfast-menu-x.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>Shrimp Sandwich</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 12.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/sandwich-tag-iv.jpg);">
+                <!-- <img src="images/breakfast-menu-j.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>VeggieHam Sandwich</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 10.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="menu smoothies tag-menu hide">
+    <div class="menu-list-container">
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/smoothies-tag-i.jpg);">
+                <!-- <img src="images/breakfast-menu-ii.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>Coarrobema</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 8.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/smoothies-tag-ii.jpg);">
+                <!-- <img src="images/breakfast-menu-kii.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>Sunshine</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 8.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="menu milkshakes tag-menu hide">
+    <div class="menu-list-container">
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/milkshakes-tag-i.jpg);">
+                <!-- <img src="images/breakfast-menu-ii.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>Vanilla</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 8.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/milkshakes-tag-ii.jpg);">
+                <!-- <img src="images/breakfast-menu-kii.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>Chocolate</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 8.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="menu salad tag-menu hide">
+    <div class="menu-list-container">
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/salad-tag-ii.jpg);">
+                <!-- <img src="images/breakfast-menu-ii.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>Avocado Salad</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 10.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/salad-tag-i.jpg);">
+                <!-- <img src="images/breakfast-menu-kii.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>Fully Loaded</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 15.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/salad-tag-iii.jpg);">
+                <!-- <img src="images/breakfast-menu-kii.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>Salad On Bahamas</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 15.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>        
+    </div>
+</section>
+<section class="menu extra tag-menu hide">
+    <div class="menu-list-container">
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/extra-tag-i.jpg);">
+                <!-- <img src="images/breakfast-menu-ii.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>Tacos</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 10.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="meal-item-container">
+            <div class="meal-image-container" style="background-image: url(../images/extra-tag-ii.jpg);">
+                <!-- <img src="images/breakfast-menu-kii.jpg" alt=""> -->
+            </div>
+            <div class="meal-item-details">
+                <div>
+                <h3>Spring Rolls</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut aliqua.</p>
+                    <span>GHS 8.00</span>
+                    <div>
+                    <button>Add to cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end: Menu section --> 
+<!-- end:Menu tags corresponding menu -->
+
+<!-- start:footer -->
+<%- include('layouts/footer'); -%>
+<!-- End:footer -->
+
+   <!-- Start:Scripts -->
+     <!-- Start:Genral Scripts -->
+ <%- include('layouts/general-scripts'); -%>
+ <!-- End:Genral Scripts -->
+ <!-- End:Scripts -->
+</body>
+</html>

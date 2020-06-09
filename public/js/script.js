@@ -59,3 +59,16 @@ function initMap() {
         document.getElementById('map'), {zoom: 15, center: uluru});
     var marker = new google.maps.Marker({position: uluru, map: map});
   }
+
+
+//   MENU PAGE
+// DISPLAY TAGGED MENU FUNCTION
+function displayTagMenu(tag){
+    let allTags = document.getElementById('menu-tags').getElementsByTagName('span');
+    let allTagMenu = document.getElementsByClassName('tag-menu');
+    for(let i=0; i<allTags.length;i++){allTags[i].classList.remove('selected-tag');}
+    tag.classList.add('selected-tag');
+    for(let i=0; i<allTagMenu.length;i++){allTagMenu[i].classList.add('hide');}
+    document.getElementsByClassName(tag.id)[0].classList.remove('hide');
+    
+}
