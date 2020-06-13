@@ -79,6 +79,10 @@ nav a{
     color: rgba(255,255,255,0.8);
 }
 
+.home-page-active{
+    color:#dd4d09;
+}
+
 nav img{
     max-width: 50%;
 }

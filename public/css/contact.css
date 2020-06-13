@@ -3,6 +3,15 @@ h1,h2,h3{
     font-family: 'Josefin Sans', sans-serif;
 }
 
+/* Nav styles */
+nav a{
+    color: rgba(255,255,255,0.8) !important;
+}
+
+.contact-page-active{
+    color:#dd4d09 !important;
+}
+
 /* Home Section styles */
 .home-section{
     width: 100%;
