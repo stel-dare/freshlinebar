@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshline Bar - Cart</title>
+        <!-- Start:General Styles -->
+        <%- include('layouts/general-styles'); -%>
+        <link rel="stylesheet" href="css/cart.css">
+        <!-- End: General Styles -->
+</head>
+<body>
+       <!-- Start: Navigation -->
+       <%- include('layouts/nav'); -%>
+       <!-- End: Navigation -->
+       <!-- Start Home section -->
+       <section class="home-section">
+        <span id='order-list' class="list-tab" onclick="displayShoppingList(this)"> ORDERS</span>
+        <span id="cart-list" class="selected-tab list-tab" onclick="displayShoppingList(this)"> CART</span>
+    </section>
+    <!-- End Home section -->
+
+    <!-- start: Order list section -->
+    <section class="order-list list hide">
+     <div class="order-item">
+         <div class="less-details">
+            <p><span>ORDER #54 </span><span class="order-status">Pending</span></p>
+            <p><span>13 June 2020, 3:00PM</span></p>
+            <p><span>COST: GHS30</span><span onclick="displayOrderDetails(this)" class="more-details-button">more details</span></p>
+         </div>
+         <div class="more-details hide">
+             <p><span>Order id: </span><span> 1234567890</span></p>
+             <p><span>Ordered Items:</span></p>
+            <table>
+                <tr><th>Item</th><th>Qty</th><th>Cost</th></tr>
+                <tr><td>Tacos</td><td>2</td><td>GHS 20</td></tr>
+                <tr><td>Irish Pancakes</td><td>1</td><td>GHS 10</td></tr>
+            </table>
+            <p><span> Total Cost: </span><span> GHS30</span></p>
+            <p><span>Time of Order: </span><span> 13 June 2020, 3:00PM</span></p>
+            <p><span>Estimated Time of Arrival: </span><span> 30mins</span></p>
+            <p><span onclick="displayOrderDetails(this)">less details</span></p>
+         </div>
+
+     </div>
+
+     <div class="order-item">
+        <div class="less-details">
+           <p><span>ORDER #53 </span><span class="order-status">Pending</span></p>
+           <p><span>13 June 2020, 2:50PM</span></p>
+           <p><span>COST: GHS58</span><span onclick="displayOrderDetails(this)" class="more-details-button">more details</span></p>
+        </div>
+        <div class="more-details hide">
+            <p><span>Order id: </span><span> 8834567890</span></p>
+            <p><span>Ordered Items:</span></p>
+           <table>
+               <tr><th>Item</th><th>Qty</th><th>Cost</th></tr>
+               <tr><td>The Burger Meal</td><td>1</td><td>GHS 20</td></tr>
+               <tr><td>Tropical Mix</td><td>1</td><td>GHS 8</td></tr>
+               <tr><td>Avocado Salad</td><td>2</td><td>GHS 20</td></tr>
+               <tr><td>Chocolate</td><td>1</td><td>GHS 10</td></tr>
+           </table>
+           <p><span> Total Cost: </span><span> GHS58</span></p>
+           <p><span>Time of Order: </span><span> 13 June 2020, 2:50PM</span></p>
+           <p><span>Estimated Time of Arrival: </span><span> 120mins</span></p>
+           <p><span onclick="displayOrderDetails(this)">less details</span></p>
+        </div>
+
+    </div>
+    </section>
+    <!-- end: Order list section -->
+
+    <!-- start: Cart list section -->
+    <section class="cart-list list">
+        <div class="cart-item">
+            <img src="images/salad-tag-ii.jpg" alt="image of sandwich">
+            <div class="cart-item-description"> 
+                <span>Avocado Salad</span>
+                <span>GHS 10</span>
+            </div>
+            <div class="cart-item-increment">
+                <i class="fa fa-minus" aria-hidden="true"></i>  <input type="number" id="quantity" name="quantity" min="1" max="99" value="1"> <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <div class="cart-item">
+            <img src="images/breakfast-combo-tag-i.jpg" alt="image of sandwich">
+            <div class="cart-item-description"> 
+                <span>The Burger Meal</span>
+                <span>GHS 20</span>
+            </div>
+            <div class="cart-item-increment">
+                <i class="fa fa-minus" aria-hidden="true"></i>  <input type="number" id="quantity" name="quantity" min="1" max="99" value="1"> <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <div class="cart-item">
+            <img src="images/breakfast-menu-x.jpg" alt="image of sandwich">
+            <div class="cart-item-description"> 
+                <span>Trpoical Mix</span>
+                <span>GHS 8</span>
+            </div>
+            <div class="cart-item-increment">
+                <i class="fa fa-minus" aria-hidden="true"></i>  <input type="number" id="quantity" name="quantity" min="1" max="99" value="1"> <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <div class="cart-item">
+            <img src="images/milkshakes-tag-ii.jpg" alt="image of sandwich">
+            <div class="cart-item-description"> 
+                <span>Chocolate</span>
+                <span>GHS 8</span>
+            </div>
+            <div class="cart-item-increment">
+                <i class="fa fa-minus" aria-hidden="true"></i>  <input type="number" id="quantity" name="quantity" min="1" max="99" value="1"> <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <div class="cart-item">
+            <img src="images/extra-tag-ii.jpg" alt="image of sandwich">
+            <div class="cart-item-description"> 
+                <span>Tacos</span>
+                <span>GHS 10</span>
+            </div>
+            <div class="cart-item-increment">
+                <i class="fa fa-minus" aria-hidden="true"></i>  <input type="number" id="quantity" name="quantity" min="1" max="99" value="1"> <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <P class="subtotal">Subtotal: <span>GHS 56</span></P>
+        <p class="continue-shopping"><span><i class="fa fa-long-arrow-left" aria-hidden="true"></i>Continue Shopping</span></p>
+        <p class="proceed-ckeckout"><span>Proceed To Checkout<i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></p> 
+    </section>
+    <!-- end: Cart list section -->
+
+    <!-- start:footer -->
+<%- include('layouts/footer'); -%>
+<!-- End:footer -->
+       <!-- Start:Scripts -->
+      <!-- Start:Genral Scripts -->
+  <%- include('layouts/general-scripts'); -%>
+  <!-- End:Genral Scripts -->
+  <!-- End:Scripts -->
+</body>
+</html>

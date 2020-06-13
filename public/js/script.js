@@ -72,3 +72,29 @@ function displayTagMenu(tag){
     document.getElementsByClassName(tag.id)[0].classList.remove('hide');
     
 }
+
+// CART PAGE
+// DISPLAY CART LIST / ORDER LIST OF USER FUNCTION
+
+function displayShoppingList(list){
+    let allListTabs = document.getElementsByClassName('list-tab');
+    let allList = document.getElementsByClassName('list');
+    for(let i=0; i<allListTabs.length;i++){allListTabs[i].classList.remove('selected-tab');}
+    for(let i=0; i<allList.length;i++){allList[i].classList.add('hide');}
+    list.classList.add('selected-tab');
+    document.getElementsByClassName(list.id)[0].classList.remove('hide');
+}
+
+function displayOrderDetails(order){
+    let orderParent  = order.parentElement.parentElement.parentElement;
+    orderParent.getElementsByClassName('more-details-button')[0].classList.toggle('hide');
+    orderParent.getElementsByClassName('more-details')[0].classList.toggle('hide');
+
+    // console.dir()
+}
+
+
+
+
+
+
