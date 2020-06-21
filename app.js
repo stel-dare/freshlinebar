@@ -24,6 +24,12 @@ app.get('/menu',(req,res)=>{
 app.get('/cart',(req,res)=>{
     res.render('cart');
 });
+
+app.get('/admin',(req,res)=>{
+    res.render('admin/dashboard');
+    // res.send('hey');
+});
+
 app.listen(process.env.PORT || 3000,()=>{
     console.log('Listening on port 3000');
 });

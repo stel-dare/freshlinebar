@@ -1,0 +1,49 @@
+<nav>
+    <div class="nav-menu">
+    <div class="logo-container">
+        <div>
+        <img src="images/logo-ii-reduced.png" alt="log of bar">
+        <span>FRESHLINE</span>
+    </div>
+        <small>BREAKFAST</small>
+    </div>
+    <div class="desktop-nav-links">
+       <span onclick="dropdown()" id="menu-span"><i class="fa fa-bars" id="hamburger"></i>MENU</span>
+       <div class="">
+           <a href="#" class="">Dashboard</a>
+           <a href="#" class="">Orders</a>
+           <a href="#" class="">Menu</a>
+           <a href="#" class="">Revenue</a>
+           <a href="#" class="">Customers</a>
+           <a href="#" class="">Log Out</a>
+       </div> 
+    </div>
+</div>
+    <div class="mobile-nav-links hide" id='mobile-nav-links'>
+        <a href="#" class="">Dashboard</a>
+        <a href="#" class="">Orders</a>
+        <a href="#" class="">Menu</a>
+        <a href="#" class="">Revenue</a>
+        <a href="#" class="">Customers</a>
+        <a href="#" class="">Log Out</a>      
+    </div>
+</nav>
+<section id='nav-overlay' class="" onclick="dropdown()"></section>
+<style>
+    body{
+        background: #f5f5f5;
+        color: #333333;
+    }
+    nav{
+        background: #fff;
+    }
+    nav a {
+    color: #7e7e7e;
+    }
+    .desktop-nav-links span {
+        color: #333333;
+    }
+    .nav-overlay {
+        background: #fff;
+    }   
+</style>
