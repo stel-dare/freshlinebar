@@ -6,13 +6,46 @@
     <title>Admin - Dashboard</title>
         <!-- Start:General Styles -->
         <%- include('../layouts/general-styles'); -%>
-        <!-- <link rel="stylesheet" href="css/about.css"> -->
+        <link rel="stylesheet" href="css/admin/dashboard.css">
         <!-- End: General Styles -->
 </head>
 <body>
        <!-- Start: Navigation -->
    <%- include('layouts/nav'); -%>
    <!-- End: Navigation -->
+
+   <!-- page h1 title -->
+   <h1>TODAY</h1>
+   <!-- Summary Cards Section -->
+   <section class="sumary-cards">
+       <a href="#" class="total-orders">
+           <div class="card-text">
+            <span class="order-count">107</span>
+            <span>Total Orders</span>
+           </div>
+           <div class="card-img">
+            <img src="images/food-delivery.png" alt="">
+           </div>
+       </a>
+       <a href="#" class="total-revenue">
+        <div class="card-text">
+        <span class="revenue-count">GHS 1,097</span>
+        <span>Total Revenue</span>
+       </div>
+       <div class="card-img">
+        <img src="images/money.png" alt="">
+       </div>  
+       </a>
+       <a href="#" class="total-feedback">
+        <div class="card-text">
+        <span class="feedback-count">10</span>
+        <span>Customer Feedback</span>
+       </div>
+       <div class="card-img">
+        <img src="images/mail.png" alt="">
+       </div>
+       </a>
+   </section>
 
      <!-- Start:Genral Scripts -->
      <%- include('../layouts/general-scripts'); -%>
