@@ -121,6 +121,114 @@ color: #36a4e3;
 
 }
 
+/* <!-- Menu and Order List Summary --> */
+/* .menu-order-list-summary {
+    margin: 3em 0em;
+    height: 100%;
+} */
+
+.menu-list {
+    background: #fff;
+    width: 85%;
+    margin: 2em auto 2em auto;
+    padding: 0.8em 0em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    max-height: 65%;
+    overflow: auto;
+}
+
+.menu-list p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 0.8em;
+}
+
+.menu-list-item {
+    line-height: 1.2;
+    font-size: 85%;
+    color: rgba(51, 51, 51, 0.8);
+}
+
+.menu-list-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+
+.menu-list p:nth-child(1), .order-list-title {
+    color: #7f63f4;
+    border-left: 2px solid #7f63f4;
+    font-weight: 600;
+}
+
+.menu-list p:nth-child(1) a , .order-list-title a{
+    background: #7f63f4;
+    color: #fff;
+    padding: 0.2em 0.4em;
+    border-radius: 5px;
+}
+
+.menu-list-item span:nth-child(2) {
+    background: #60d166;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 0.2em 0.3em;
+    border-radius: 5px;
+}
+
+/* Received Order List */
+
+.order-list {
+    background: #fff;
+    width: 85%;
+    margin: 0 auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    padding: 1em 0em;
+    height: 65%;
+}
+
+.order-list-title {
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 0.8em;
+    height: 10%;
+}
+
+.order-list-container {
+    width: 100%;
+    height: 85%;
+    overflow: auto;
+    /* margin-bottom: 0; */
+}
+
+.order-list-container table {
+    border-spacing: 0;
+    width: 100%;
+}
+
+table th {
+    /* padding: 0em 1.5em 0em 0em; */
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: left;
+}
+
+table td{
+    white-space: nowrap;
+    padding: 0em 2em 0em 0em;
+    font-size: 85%;
+}
+
+.order-list-container > table > tbody > tr > td, .order-list-container > table > tbody > tr > th {
+    /* background: lightblue; */
+    padding: 1em 0.8em;
+}
+
+.order-list-container > table > tbody > tr > td {
+    border-top: 1px solid #7e7e7e4d;
+}
+
+
 @media only screen and (min-width: 768px) {
     /* <!-- Summary Cards Section --> */
 .sumary-cards{
@@ -173,6 +281,28 @@ color: #36a4e3;
     .order-img {
         width: 30%;
     }
+
+    .order-list {
+        width: 60%;
+        display: inline-block;
+    }
+
+    /* Received Order List */
+
+    /* .menu-order-list-summary {
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    } */
+
+    .menu-list {
+        width: 30%;
+        margin: 2em 2.5% 0em 2.5%;
+        display: inline-block;
+    }
+
+
 }
 
 @media only screen and (min-width: 1440px) {
