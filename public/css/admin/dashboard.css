@@ -66,7 +66,7 @@ h1{
 .order-summary-card {
     background: #fff;
     width: 85%;
-    margin: 0 auto;
+    margin: 2em auto 0em auto;
     padding: 2em 0em;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
@@ -130,10 +130,10 @@ color: #36a4e3;
 .menu-list {
     background: #fff;
     width: 85%;
-    margin: 2em auto 2em auto;
+    margin: 4em auto 4em auto;
     padding: 0.8em 0em;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    max-height: 65%;
+    height: 65%;
     overflow: auto;
 }
 
@@ -245,7 +245,7 @@ table td{
 /* <!-- Order Summary Cards Section --> */
 .order-summary-card{
     width: 95%;
-    margin: 3em auto 0em auto;
+    margin: 4em auto 0em auto;
 }
 
 .order-summary-card a {
@@ -260,6 +260,10 @@ table td{
 .order-img {
     width: 40%;
 }
+
+/* .menu-list,.order-list{
+    height: 45%;
+} */
 
 
 }
@@ -285,6 +289,7 @@ table td{
     .order-list {
         width: 60%;
         display: inline-block;
+        vertical-align: bottom;
     }
 
     /* Received Order List */
@@ -298,10 +303,9 @@ table td{
 
     .menu-list {
         width: 30%;
-        margin: 2em 2.5% 0em 2.5%;
+        margin: 4em 4% 0em 2.5%;
         display: inline-block;
     }
-
 
 }
 
