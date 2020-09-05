@@ -51,12 +51,12 @@ section.home-section h1 {
 }
 
 .contact-info p:nth-child(2) span{
-    color: rgba(255,255,255,0.8);
+    /* color: rgba(255,255,255,0.8); */
 }
 
 .contact-info .fa {
-    font-size: 130%;
-    padding-right: 0.5em;
+    font-size: 140%;
+    padding-right: 0.7em;
 }
 
 @media only screen and (min-width: 768px) {

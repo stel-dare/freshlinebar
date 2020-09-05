@@ -533,7 +533,7 @@ section.services h2, section.services h3, .menu h2, .menu h3 {
 
     /* Footer section */
     footer{
-        padding: 5em 1em;
+        padding: 1.5em 1em;
         text-align: center;
     }
     footer p:nth-child(1) {
