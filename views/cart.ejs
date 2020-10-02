@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freshline Bar - Cart</title>
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
         <!-- Start:General Styles -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
         <%- include('layouts/general-styles'); -%>
         <link rel="stylesheet" href="css/cart.css">
+        <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        
+       
         <!-- End: General Styles -->
 </head>
 <body>
@@ -15,123 +27,145 @@
        <!-- End: Navigation -->
        <!-- Start Home section -->
        <section class="home-section">
-        <span id='order-list' class="list-tab" onclick="displayShoppingList(this)"> ORDERS</span>
-        <span id="cart-list" class="selected-tab list-tab" onclick="displayShoppingList(this)"> CART</span>
-    </section>
+        <h1 style="color: #fff; margin: 0.67em 0 0.67em 0;">CART</h1>
+        <p><a href="/">HOME</a> <a href="#">CART</a></p>
+    </section> 
     <!-- End Home section -->
 
-    <!-- start: Order list section -->
-    <section class="order-list list hide">
-     <div class="order-item">
-         <div class="less-details">
-            <p><span>ORDER #54 </span><span class="order-status">Pending</span></p>
-            <p><span>13 June 2020, 3:00PM</span></p>
-            <p><span>COST: GHS30</span><span onclick="displayOrderDetails(this)" class="more-details-button">more details</span></p>
-         </div>
-         <div class="more-details hide">
-             <p><span>Order id: </span><span> 1234567890</span></p>
-             <p><span>Ordered Items:</span></p>
-            <table>
-                <tr><th>Item</th><th>Qty</th><th>Cost</th></tr>
-                <tr><td>Tacos</td><td>2</td><td>GHS 20</td></tr>
-                <tr><td>Irish Pancakes</td><td>1</td><td>GHS 10</td></tr>
-            </table>
-            <p><span> Total Cost: </span><span> GHS30</span></p>
-            <p><span>Time of Order: </span><span> 13 June 2020, 3:00PM</span></p>
-            <p><span>Estimated Time of Arrival: </span><span> 30mins</span></p>
-            <p><span onclick="displayOrderDetails(this)">less details</span></p>
-         </div>
-
-     </div>
-
-     <div class="order-item">
-        <div class="less-details">
-           <p><span>ORDER #53 </span><span class="order-status">Pending</span></p>
-           <p><span>13 June 2020, 2:50PM</span></p>
-           <p><span>COST: GHS58</span><span onclick="displayOrderDetails(this)" class="more-details-button">more details</span></p>
+      <!-- Shopping Cart Section Begin -->
+      <section class="shopping-cart spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="shopping__cart__table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Quantity</th>
+                                    <th>Total</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="product__cart__item">
+                                        <div class="product__cart__item__pic">
+                                            <img src="images/shop/cart/cart-1.jpg" alt="">
+                                        </div>
+                                        <div class="product__cart__item__text">
+                                            <h6>T-shirt Contrast Pocket</h6>
+                                            <h5>$98.49</h5>
+                                        </div>
+                                    </td>
+                                    <td class="quantity__item">
+                                        <div class="quantity">
+                                            <div class="pro-qty">
+                                                <input type="text" value="1">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="cart__price">$ 30.00</td>
+                                    <td class="cart__close"><span class="icon_close"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="product__cart__item">
+                                        <div class="product__cart__item__pic">
+                                            <img src="images/shop/cart/cart-2.jpg" alt="">
+                                        </div>
+                                        <div class="product__cart__item__text">
+                                            <h6>Diagonal Textured Cap</h6>
+                                            <h5>$98.49</h5>
+                                        </div>
+                                    </td>
+                                    <td class="quantity__item">
+                                        <div class="quantity">
+                                            <div class="pro-qty">
+                                                <input type="text" value="1">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="cart__price">$ 32.50</td>
+                                    <td class="cart__close"><span class="icon_close"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="product__cart__item">
+                                        <div class="product__cart__item__pic">
+                                            <img src="images/shop/cart/cart-3.jpg" alt="">
+                                        </div>
+                                        <div class="product__cart__item__text">
+                                            <h6>Basic Flowing Scarf</h6>
+                                            <h5>$98.49</h5>
+                                        </div>
+                                    </td>
+                                    <td class="quantity__item">
+                                        <div class="quantity">
+                                            <div class="pro-qty">
+                                                <input type="text" value="1">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="cart__price">$ 47.00</td>
+                                    <td class="cart__close"><span class="icon_close"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="product__cart__item">
+                                        <div class="product__cart__item__pic">
+                                            <img src="images/shop/cart/cart-4.jpg" alt="">
+                                        </div>
+                                        <div class="product__cart__item__text">
+                                            <h6>Basic Flowing Scarf</h6>
+                                            <h5>$98.49</h5>
+                                        </div>
+                                    </td>
+                                    <td class="quantity__item">
+                                        <div class="quantity">
+                                            <div class="pro-qty">
+                                                <input type="text" value="1">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="cart__price">$ 30.00</td>
+                                    <td class="cart__close"><span class="icon_close"></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="continue__btn">
+                                <a href="#">Continue Shopping</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="continue__btn update__btn">
+                                <a href="#"><i class="fa fa-spinner"></i> Update cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="cart__discount">
+                        <h6>Discount codes</h6>
+                        <form action="#">
+                            <input type="text" placeholder="Coupon code">
+                            <button type="submit">Apply</button>
+                        </form>
+                    </div>
+                    <div class="cart__total">
+                        <h6>Cart total</h6>
+                        <ul>
+                            <li>Subtotal <span>$ 169.50</span></li>
+                            <li>Total <span>$ 169.50</span></li>
+                        </ul>
+                        <a href="#" class="primary-btn">Proceed to checkout</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="more-details hide">
-            <p><span>Order id: </span><span> 8834567890</span></p>
-            <p><span>Ordered Items:</span></p>
-           <table>
-               <tr><th>Item</th><th>Qty</th><th>Cost</th></tr>
-               <tr><td>The Burger Meal</td><td>1</td><td>GHS 20</td></tr>
-               <tr><td>Tropical Mix</td><td>1</td><td>GHS 8</td></tr>
-               <tr><td>Avocado Salad</td><td>2</td><td>GHS 20</td></tr>
-               <tr><td>Chocolate</td><td>1</td><td>GHS 10</td></tr>
-           </table>
-           <p><span> Total Cost: </span><span> GHS58</span></p>
-           <p><span>Time of Order: </span><span> 13 June 2020, 2:50PM</span></p>
-           <p><span>Estimated Time of Arrival: </span><span> 120mins</span></p>
-           <p><span onclick="displayOrderDetails(this)">less details</span></p>
-        </div>
-
-    </div>
     </section>
-    <!-- end: Order list section -->
+    <!-- Shopping Cart Section End -->
 
-    <!-- start: Cart list section -->
-    <section class="cart-list list">
-        <div class="cart-item">
-            <img src="images/salad-tag-ii.jpg" alt="image of sandwich">
-            <div class="cart-item-description"> 
-                <span>Avocado Salad</span>
-                <span>GHS 10</span>
-            </div>
-            <div class="cart-item-increment">
-                <i class="fa fa-minus" aria-hidden="true"></i>  <input type="number" id="quantity" name="quantity" min="1" max="99" value="1"> <i class="fa fa-plus" aria-hidden="true"></i>
-            </div>
-            <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <div class="cart-item">
-            <img src="images/breakfast-combo-tag-i.jpg" alt="image of sandwich">
-            <div class="cart-item-description"> 
-                <span>The Burger Meal</span>
-                <span>GHS 20</span>
-            </div>
-            <div class="cart-item-increment">
-                <i class="fa fa-minus" aria-hidden="true"></i>  <input type="number" id="quantity" name="quantity" min="1" max="99" value="1"> <i class="fa fa-plus" aria-hidden="true"></i>
-            </div>
-            <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <div class="cart-item">
-            <img src="images/breakfast-menu-x.jpg" alt="image of sandwich">
-            <div class="cart-item-description"> 
-                <span>Trpoical Mix</span>
-                <span>GHS 8</span>
-            </div>
-            <div class="cart-item-increment">
-                <i class="fa fa-minus" aria-hidden="true"></i>  <input type="number" id="quantity" name="quantity" min="1" max="99" value="1"> <i class="fa fa-plus" aria-hidden="true"></i>
-            </div>
-            <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <div class="cart-item">
-            <img src="images/milkshakes-tag-ii.jpg" alt="image of sandwich">
-            <div class="cart-item-description"> 
-                <span>Chocolate</span>
-                <span>GHS 8</span>
-            </div>
-            <div class="cart-item-increment">
-                <i class="fa fa-minus" aria-hidden="true"></i>  <input type="number" id="quantity" name="quantity" min="1" max="99" value="1"> <i class="fa fa-plus" aria-hidden="true"></i>
-            </div>
-            <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <div class="cart-item">
-            <img src="images/extra-tag-ii.jpg" alt="image of sandwich">
-            <div class="cart-item-description"> 
-                <span>Tacos</span>
-                <span>GHS 10</span>
-            </div>
-            <div class="cart-item-increment">
-                <i class="fa fa-minus" aria-hidden="true"></i>  <input type="number" id="quantity" name="quantity" min="1" max="99" value="1"> <i class="fa fa-plus" aria-hidden="true"></i>
-            </div>
-            <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <P class="subtotal">Subtotal: <span>GHS 56</span></P>
-        <p class="continue-shopping"><span><i class="fa fa-long-arrow-left" aria-hidden="true"></i>Continue Shopping</span></p>
-        <p class="proceed-ckeckout"><span>Proceed To Checkout<i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></p> 
-    </section>
-    <!-- end: Cart list section -->
 
     <!-- start:footer -->
 <%- include('layouts/footer'); -%>
