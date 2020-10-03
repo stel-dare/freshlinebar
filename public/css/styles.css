@@ -54,13 +54,13 @@ a{
 /* Navigation styles */
 nav{
     background:#0f1404;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     right: 0;
     z-index: 100;
     max-height: 100%;
-    overflow-x: auto;
+    /* overflow-x: auto; */
 }
 
 .nav-menu {
@@ -116,11 +116,16 @@ border: 1px solid #ff7008;
 }
 
 .mobile-nav-links a {
-    padding: 1.2em 1em;
+    margin: 1.2em 1em;
 }
 
 i#hamburger {
     padding-right: 0.5em;
+}
+
+.mobile-profile-links {
+    display: flex;
+    flex-direction: column;
 }
 
 .hide, .slide,.slide-image{
@@ -148,6 +153,52 @@ i#hamburger {
     z-index: 99;
 }
 
+/* Profile Submenu Desktop */
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+.profile-links {
+    position: absolute;
+    /* top: 10%; */
+    display: none;
+    flex-direction: column;
+    /* right: 2%; */
+    background: #0f1404;
+    /* padding: 1em 1.5em; */
+    z-index: 150;
+}
+.profile-links li {
+    color: #fff;
+    padding: 0.5em 0.5em 0.5em 0em;
+    white-space: nowrap;
+}
+li.profile-links a {
+    padding-left: 1em !important;
+}
+.profile-links-div:hover > .profile-links{
+display: flex;
+}
+
+.profile-links i{
+    padding-right: 1em;
+}
+
+.mobile-profile-links a {
+    margin: 0.5em 2.2em;
+}
+.mobile-profile-links i {
+    padding-right: 1em;
+}
+
+.user-name-mobile-div{
+    margin: 0em 0em 1em 0em;
+}
+i.fa.fa-chevron-down {
+    font-size: 1.2em;
+    vertical-align: middle;
+}
 /* Home/slideshow section styles */
 
 .slideshow-container{
@@ -555,9 +606,9 @@ section.services h2, section.services h3, .menu h2, .menu h3 {
 
 @media only screen and (min-width: 768px) {
     /* Navigation styles */
-    .mobile-nav-links a {
+    /* .mobile-nav-links a {
         padding: 1.2em 2.5em;
-    }
+    } */
     .logo-container {
         width: 15%;
     }
@@ -692,6 +743,7 @@ footer p:nth-child(1) {
 
     .desktop-nav-links div {
         display: flex;
+        align-items: center;
     }
 
     .desktop-nav-links div a {

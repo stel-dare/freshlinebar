@@ -14,9 +14,23 @@
            <a href="/menu" class="menu-page-active">Menu</a>
            <a href="/services" class="services-page-active">Services</a>
            <a href="/about" class="about-page-active">About</a>
-           <a href="/contact" class="contact-page-active">Contact</a>
            <a href="/cart" class="cart-page-active"><i class="fa fa-shopping-cart" style="font-size: 130%;"></i></a>
-       </div> 
+           <!-- Desktop DropDown Start -->
+           <ul class="profile-links-div">
+            <li class="user-name-div">
+                <a href="/contact" class="contact-page-active user-name">Hi, <span class="contact-page-active" style="display: inline;">Henrietta </span><i class="fa fa-chevron-down"></i></a>
+            </li>
+            <li class="profile-links">
+                <ul>
+                <li><a href="#"><i class="fas fa-shopping-bag"></i> Current Orders</a></li>
+                <li><a href="#"> <i class="far fa-clock"></i> Past Orders</a></li>
+                <li><a href="#"><i class="far fa-user"></i>View Profile</a></li>
+            </ul>
+               </li>
+           </ul>
+           <!-- Desktop DropDown End -->
+           
+        </div> 
     </div>
 </div>
     <div class="mobile-nav-links hide" id='mobile-nav-links'>
@@ -24,8 +38,19 @@
         <a href="/menu" class="menu-page-active">Menu</a>
         <a href="/services" class="services-page-active">Services</a>
         <a href="/about" class="about-page-active">About</a>
-        <a href="/contact" class="contact-page-active">Contact</a>
-        <a href="/cart" class="cart-page-active"><i class="fa fa-shopping-cart" style="font-size: 130%;"></i></a>       
+        <a href="/cart" class="cart-page-active"><i class="fa fa-shopping-cart" style="font-size: 130%;"></i></a>
+        <div class="user-name-mobile-div">
+            <a href="/contact" class="contact-page-active user-name-mobile">Hi, <span class="contact-page-active" style="display: inline;">Henrietta </span></a>
+            <i class="fa fa-chevron-down" onclick="document.getElementsByClassName('mobile-profile-links')[0].classList.toggle('hide');"></i>
+        </div>
+        <!-- Mobile DropDown Start -->
+        <aside class="mobile-profile-links hide fade">
+            <a href="#"><i class="fas fa-shopping-bag"></i> Current Orders</a>
+            <a href="#"> <i class="far fa-clock"></i> Past Orders</a>
+            <a href="#"><i class="far fa-user"></i>View Profile</a>
+        </aside>   
+        <!-- Mobile DropDown End     -->
     </div>
 </nav>
-<section id='nav-overlay' class="" onclick="dropdown()"></section>
+
+<!-- <section id='nav-overlay' class="" onclick="dropdown()"></section> -->
